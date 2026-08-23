@@ -1,0 +1,3895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagoor Meeran — Security Systems Engineer | CCTV · VMS · Access Control · SIRA | Dubai, UAE</title>
+<meta name="description" content="Nagoor Meeran — SIRA-licensed Security Systems Engineer based in Dubai, UAE. 10+ years across CCTV, intruder alarm, access control, biometric and VMS systems engineering. Open to senior-level engagements.">
+
+<!-- Social share preview (LinkedIn, WhatsApp, etc.) — update og:url and og:image to your live domain once deployed -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Nagoor Meeran — Security Systems Engineer | CCTV · Intruder Alarm · Access Control · Biometric | Dubai, UAE">
+<meta property="og:description" content="SIRA-licensed Security Systems Engineer, 10+ years across CCTV, intruder alarm, access control and biometric systems. Open to senior-level engagements in Dubai.">
+<meta property="og:url" content="https://your-domain-here.com/">
+<meta property="og:image" content="https://your-domain-here.com/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nagoor Meeran — Security Systems Engineer | Dubai, UAE">
+<meta name="twitter:description" content="SIRA-licensed CCTV, intruder alarm, access control &amp; biometric systems engineer. Open to senior-level roles in Dubai.">
+<meta name="twitter:image" content="https://your-domain-here.com/preview.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A0E14'/%3E%3Ctext x='50' y='66' font-family='monospace' font-size='46' font-weight='700' fill='%23C9A24A' text-anchor='middle'%3ENM%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nagoor Meeran",
+  "jobTitle": "Security Systems Engineer",
+  "description": "SIRA-licensed Security Systems Engineer specializing in CCTV, intruder alarm, access control and biometric systems.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+  "email": "mailto:vemeeran@gmail.com",
+  "telephone": "+971-50-426-0038",
+  "sameAs": ["https://www.linkedin.com/in/vemeeran"],
+  "worksFor": { "@type": "Organization", "name": "Vostok Trading LLC" },
+  "knowsAbout": ["CCTV", "VMS", "Intruder Alarm Systems", "Access Control", "Biometric Systems", "SIRA Compliance"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void:#0A0E14;
+    --panel:#121821;
+    --panel-raised:#161E28;
+    --line:#232C38;
+    --line-soft:#1B222C;
+    --gold:#C9A24A;
+    --gold-dim:#8F7433;
+    --teal:#4FBDAF;
+    --text:#E8EAEE;
+    --muted:#9AA5B5;
+    --muted-dim:#6B7686;
+    --rec:#C0453A;
+    --radius:14px;
+    --maxw:1120px;
+  }
+
+  *{box-sizing:border-box;}
+
+  ::selection{ background:var(--gold); color:var(--void); }
+  html{ scrollbar-width:thin; scrollbar-color:var(--gold-dim) var(--void); }
+  ::-webkit-scrollbar{ width:10px; }
+  ::-webkit-scrollbar-track{ background:var(--void); }
+  ::-webkit-scrollbar-thumb{ background:var(--gold-dim); border-radius:6px; border:2px solid var(--void); }
+  ::-webkit-scrollbar-thumb:hover{ background:var(--gold); }
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 500px at 15% -10%, rgba(79,189,175,0.05), transparent 60%),
+      radial-gradient(1000px 600px at 100% 0%, rgba(201,162,74,0.06), transparent 55%),
+      var(--void);
+    color:var(--text);
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* Ambient control-room layer: a faint fixed floor grid plus a slow
+     monitor-glass scan band drifting the full height of the viewport,
+     so the CCTV console feel carries through every section, not just
+     the hero. Both are decorative, inert to input, and pause for
+     reduced-motion users. */
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:42px 42px;
+    opacity:0.34;
+    pointer-events:none;
+    z-index:1;
+  }
+  body::after{
+    content:"";
+    position:fixed; left:0; right:0; top:-30vh; height:46vh;
+    background:linear-gradient(180deg, transparent, rgba(79,189,175,0.05), transparent);
+    animation:pagescan 17s linear infinite;
+    pointer-events:none;
+    z-index:1;
+    mix-blend-mode:screen;
+  }
+  @keyframes pagescan{
+    0%{ transform:translateY(0); }
+    100%{ transform:translateY(145vh); }
+  }
+  @media (prefers-reduced-motion: reduce){ body::after{ display:none; } }
+  main{ position:relative; z-index:2; }
+
+  h1,h2,h3{
+    font-family:'Space Grotesk', system-ui, sans-serif;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+
+  .mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; }
+
+  a{ color:var(--gold); }
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .skip-link{
+    position:absolute; left:-999px; top:auto;
+    background:var(--gold); color:var(--void); padding:10px 16px;
+    font-family:'IBM Plex Mono',monospace; font-size:13px; z-index:1000;
+    border-radius:0 0 8px 0;
+  }
+  .skip-link:focus{ left:0; top:0; }
+
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 28px; }
+  @media (max-width:480px){ .wrap{ padding:0 18px; } }
+
+  /* ---------- Scroll progress ---------- */
+  .progress{
+    position:fixed; top:0; left:0; height:2px; width:0%;
+    background:linear-gradient(90deg, var(--teal), var(--gold));
+    z-index:200; transition:width .1s linear;
+  }
+
+  /* ---------- Top status bar ---------- */
+  .statusbar{
+    border-bottom:1px solid var(--line);
+    background:rgba(18,24,33,0.72);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    position:sticky; top:0; z-index:100;
+  }
+  .statusbar-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:11px 28px; max-width:var(--maxw); margin:0 auto;
+    font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--muted);
+    gap:16px;
+  }
+  .status-live{ display:flex; align-items:center; gap:8px; color:var(--teal); white-space:nowrap; min-width:0; }
+  /* text-overflow:ellipsis has no effect on a flex container itself — it
+     only truncates a normal inline/block text run. The dot needs
+     .status-live to stay flex (to align with the text), so the
+     truncation properties live on this inner text-only span instead. */
+  .status-live-text{
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0;
+  }
+  .dot{
+    width:7px; height:7px; border-radius:50%; background:var(--teal);
+    box-shadow:0 0 0 0 rgba(79,189,175,0.6);
+    animation:pulse 2.4s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(79,189,175,0.5); }
+    70%{ box-shadow:0 0 0 7px rgba(79,189,175,0); }
+    100%{ box-shadow:0 0 0 0 rgba(79,189,175,0); }
+  }
+  .statusbar nav{ display:flex; gap:22px; }
+  .statusbar nav a{
+    color:var(--muted); text-decoration:none; letter-spacing:0.04em;
+    position:relative; padding:4px 1px; transition:color .2s ease;
+  }
+  .statusbar nav a::after{
+    content:""; position:absolute; left:0; right:100%; bottom:-2px; height:1.5px;
+    background:var(--gold); transition:right .25s ease;
+  }
+  .statusbar nav a:hover{ color:var(--gold); }
+  .statusbar nav a.active{ color:var(--gold); }
+  .statusbar nav a.active::after{ right:0; }
+
+  .nav-toggle{
+    display:none; background:none; border:1px solid var(--line); border-radius:7px;
+    width:34px; height:34px; color:var(--text); cursor:pointer;
+    align-items:center; justify-content:center; flex:none;
+  }
+  .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after{
+    display:block; width:16px; height:1.5px; background:currentColor; position:relative;
+    transition:transform .2s ease, opacity .2s ease;
+  }
+  .nav-toggle span::before, .nav-toggle span::after{ content:""; position:absolute; left:0; }
+  .nav-toggle span::before{ top:-5px; }
+  .nav-toggle span::after{ top:5px; }
+  .nav-toggle[aria-expanded="true"] span{ background:transparent; }
+  .nav-toggle[aria-expanded="true"] span::before{ transform:rotate(45deg); top:0; }
+  .nav-toggle[aria-expanded="true"] span::after{ transform:rotate(-45deg); top:0; }
+
+  @media (max-width:640px){
+    .nav-toggle{ display:flex; }
+    .statusbar nav{
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--panel); border-bottom:1px solid var(--line);
+      flex-direction:column; gap:0; padding:6px 0;
+      max-height:0; overflow:hidden; transition:max-height .25s ease;
+    }
+    .statusbar nav.open{ max-height:260px; }
+    .statusbar nav a{ padding:12px 28px; }
+    .statusbar nav a::after{ display:none; }
+    .status-live{ font-size:11px; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:64px 0 48px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:42px 42px;
+    mask-image:linear-gradient(to bottom, rgba(0,0,0,0.5), transparent 75%);
+    pointer-events:none;
+    opacity:0.5;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; left:0; right:0; height:120px; top:-120px;
+    background:linear-gradient(180deg, transparent, rgba(79,189,175,0.06), transparent);
+    animation:sweep 9s linear infinite;
+    pointer-events:none;
+  }
+  @keyframes sweep{
+    0%{ transform:translateY(0); }
+    100%{ transform:translateY(620px); }
+  }
+  @media (prefers-reduced-motion: reduce){ .hero::after{ display:none; } }
+
+  /* Profile: a monitoring-spike waveform runs as its own signal strip
+     between the intro and the stat readout below it — like the live
+     trace that's actually generating those numbers. */
+  .hero-wave{
+    position:relative; width:100%; height:46px; margin:36px 0 6px;
+    overflow:hidden; pointer-events:none; opacity:0;
+    mask-image:linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image:linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+    animation:hero-wave-in .9s ease .4s both;
+  }
+  @keyframes hero-wave-in{ to{ opacity:0.55; } }
+  .hero-wave svg{
+    width:1600px; height:100%; display:block;
+    animation:wave-drift 16s linear infinite;
+    filter:drop-shadow(0 0 3px rgba(79,189,175,0.35));
+  }
+  @keyframes wave-drift{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-800px); }
+  }
+  @media (max-width:720px){ .hero-wave{ margin:26px 0 2px; height:36px; } }
+  @media (prefers-reduced-motion: reduce){ .hero-wave svg{ animation:none; transform:translateX(-400px); } }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:40px;
+    align-items:center;
+    position:relative;
+  }
+  /* Hero boot-in sequence: eyebrow, name, role, summary, CTAs and the
+     portrait step in one after another on load, like a console
+     bringing each field online — reinforced by the existing hero-wave
+     "signal" strip finishing the sequence. */
+  @keyframes hero-fade-up{
+    from{ opacity:0; transform:translateY(14px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px; letter-spacing:0.14em; color:var(--gold);
+    text-transform:uppercase; margin-bottom:18px; display:flex; align-items:center; gap:10px;
+    animation:hero-fade-up .6s ease both;
+  }
+  .eyebrow .sep{ color:var(--line); }
+  .eyebrow .cursor{
+    display:inline-block; width:7px; height:13px; background:var(--gold);
+    animation:blink 1.1s step-end infinite; margin-left:2px;
+  }
+  @keyframes blink{ 0%,100%{ opacity:1; } 50%{ opacity:0; } }
+  @media (prefers-reduced-motion: reduce){ .eyebrow .cursor{ animation:none; opacity:0.6; } }
+
+  h1.name{
+    display:inline-block; max-width:100%;
+    font-size:clamp(2.4rem, 5vw, 3.6rem); font-weight:700;
+    background:linear-gradient(100deg,
+      var(--text) 0%, var(--text) 28%,
+      var(--teal) 42%,
+      var(--gold) 58%,
+      var(--text) 72%, var(--text) 100%);
+    background-size:220% 100%;
+    background-position:100% 0;
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    animation:name-sweep 7s ease-in-out infinite, hero-fade-up .7s ease .08s both;
+    filter:drop-shadow(0 0 0 rgba(201,162,74,0));
+    transition:filter .4s ease;
+  }
+  h1.name:hover{ filter:drop-shadow(0 0 14px rgba(201,162,74,0.35)); }
+  @keyframes name-sweep{
+    0%{ background-position:130% 0; }
+    45%{ background-position:0% 0; }
+    55%{ background-position:0% 0; }
+    100%{ background-position:-130% 0; }
+  }
+  @supports not (background-clip:text){ h1.name{ color:var(--text); animation:none; } }
+  @media (prefers-reduced-motion: reduce){ h1.name{ animation:none; background-position:0 0; } }
+  .role-line{
+    font-family:'IBM Plex Mono',monospace;
+    color:var(--muted); font-size:clamp(0.95rem,1.6vw,1.1rem);
+    margin-top:12px; letter-spacing:0.01em;
+    animation:hero-fade-up .7s ease .16s both;
+  }
+  .role-line b{ color:var(--teal); font-weight:500; }
+  .summary{
+    max-width:640px; margin-top:22px; color:#C4CBD6; font-size:1.02rem;
+    animation:hero-fade-up .7s ease .24s both;
+  }
+  @media (min-width:721px){
+    .summary{ text-align:justify; text-justify:inter-word; hyphens:auto; }
+  }
+  .cta-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; animation:hero-fade-up .7s ease .32s both; }
+  .btn{
+    font-family:'IBM Plex Mono',monospace; font-size:13px;
+    padding:11px 18px; border-radius:8px; text-decoration:none;
+    border:1px solid var(--line); color:var(--text);
+    display:inline-flex; align-items:center; gap:8px;
+    transition:border-color .15s ease, transform .15s ease, background .15s ease;
+  }
+  .btn:hover{ border-color:var(--gold); transform:translateY(-1px); }
+  .btn.primary{ background:var(--gold); color:var(--void); border-color:var(--gold); font-weight:600; }
+  .btn.primary:hover{ background:#DBB25C; }
+
+  .portrait-frame{
+    width:196px; height:214px;
+    border-radius:20px;
+    padding:4px;
+    background:linear-gradient(160deg, var(--gold), var(--gold-dim));
+    position:relative;
+    justify-self:end;
+    animation:hero-fade-up .8s ease .1s both, lock-pulse 3.6s ease-in-out infinite 1.4s;
+  }
+  @keyframes lock-pulse{
+    0%,100%{ box-shadow:0 0 0 0 rgba(79,189,175,0); }
+    50%{ box-shadow:0 0 0 7px rgba(79,189,175,0.12); }
+  }
+  .portrait-frame::before, .portrait-frame::after{
+    content:""; position:absolute; width:14px; height:14px; pointer-events:none;
+  }
+  .portrait-frame::before{ top:-9px; left:-9px; border-top:2px solid var(--teal); border-left:2px solid var(--teal); }
+  .portrait-frame::after{ bottom:-9px; right:-9px; border-bottom:2px solid var(--teal); border-right:2px solid var(--teal); }
+  .portrait-frame img{
+    width:100%; height:100%; object-fit:cover; border-radius:16px; display:block;
+    filter:grayscale(0.08) contrast(1.03);
+  }
+  .portrait-tag{
+    position:absolute; bottom:-13px; left:50%; transform:translateX(-50%);
+    background:var(--void); border:1px solid var(--gold-dim);
+    color:var(--gold); font-family:'IBM Plex Mono',monospace; font-size:10.5px;
+    padding:4px 10px; border-radius:20px; white-space:nowrap; letter-spacing:0.08em;
+  }
+
+  @media (max-width:720px){
+    .hero{ padding:44px 0 36px; }
+    .hero-grid{
+      grid-template-columns:1fr;
+      justify-items:center;
+      text-align:center;
+      gap:26px;
+    }
+    .hero-grid > div:first-child{ order:2; }
+    .portrait-frame{ order:1; justify-self:center; width:158px; height:172px; }
+    .summary{ margin-left:auto; margin-right:auto; }
+    .cta-row{ justify-content:center; }
+    .role-line{ justify-content:center; }
+    .eyebrow{ justify-content:center; flex-wrap:wrap; }
+  }
+
+  /* ---------- Stat readout ---------- */
+  .readout{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+    border-radius:12px; overflow:hidden; margin-top:44px;
+  }
+  .readout div{ background:var(--panel); padding:16px 14px; transition:background .2s ease; animation:hero-fade-up .5s ease both; }
+  .readout div:nth-child(1){ animation-delay:.4s; }
+  .readout div:nth-child(2){ animation-delay:.46s; }
+  .readout div:nth-child(3){ animation-delay:.52s; }
+  .readout div:nth-child(4){ animation-delay:.58s; }
+  .readout div:nth-child(5){ animation-delay:.64s; }
+  .readout div:hover{ background:var(--panel-raised); }
+  .readout .num{ font-family:'Space Grotesk',sans-serif; font-size:1.5rem; font-weight:700; color:var(--gold); font-variant-numeric:tabular-nums; }
+  .readout .num.c-teal{ color:var(--teal); }
+  .readout .lbl{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--muted-dim); letter-spacing:0.06em; text-transform:uppercase; margin-top:4px; }
+
+  @media (max-width:640px){
+    .readout{ grid-template-columns:repeat(2,1fr); margin-top:32px; }
+    .readout div:nth-child(5){ grid-column:1 / -1; }
+  }
+  /* tighten the gap when the readout follows the waveform strip directly,
+     since the strip already carries its own bottom margin */
+  .hero-wave + .wrap .readout{ margin-top:18px; }
+  @media (max-width:640px){ .hero-wave + .wrap .readout{ margin-top:14px; } }
+
+  /* ---------- Sections generic ---------- */
+  section{ padding:76px 0; border-bottom:1px solid var(--line); scroll-margin-top:70px; position:relative; overflow:hidden; }
+  @media (max-width:640px){ section{ padding:52px 0; } }
+
+  /* Field-themed ambient wash per section: teal for the CCTV/monitoring
+     & technical sections, gold for the access-control/credential &
+     records sections — same colour language as the bullet icons. */
+  #experience, #expertise, #brands{
+    background:
+      radial-gradient(680px 320px at 6% -6%, rgba(79,189,175,0.06), transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,0.012), transparent 40%);
+  }
+  #credentials, #education{
+    background:
+      radial-gradient(680px 320px at 96% -6%, rgba(201,162,74,0.06), transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,0.012), transparent 40%);
+  }
+  .contact-section{
+    background:
+      radial-gradient(760px 300px at 50% 0%, rgba(79,189,175,0.05), transparent 60%),
+      radial-gradient(620px 260px at 50% 100%, rgba(201,162,74,0.05), transparent 65%);
+  }
+
+  /* ghost watermark numeral behind each section heading */
+  section[data-index]::before{
+    content:attr(data-index);
+    position:absolute; top:-0.28em; right:2%;
+    font-family:'Space Grotesk',sans-serif; font-weight:700;
+    font-size:min(22vw, 220px); line-height:1; color:var(--text);
+    opacity:0.025; pointer-events:none; user-select:none;
+    letter-spacing:-0.04em;
+  }
+  @media (max-width:720px){ section[data-index]::before{ display:none; } }
+
+  /* ---------- Section title card (monitor bezel) ---------- */
+  .section-head{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    gap:8px; margin-bottom:36px;
+    position:relative; padding:26px 24px 22px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background-color:var(--panel);
+    background-repeat:no-repeat, no-repeat, no-repeat, no-repeat, repeat, no-repeat;
+    background-size:16px 16px, 16px 16px, 16px 16px, 16px 16px, auto, 380px 160px;
+    background-position:
+      top 10px left 10px,
+      top 10px right 10px,
+      bottom 10px left 10px,
+      bottom 10px right 10px,
+      0 0,
+      50% -20%;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 9 L1 1 L9 1' fill='none' stroke='%238F7433' stroke-width='1.6'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7 1 L15 1 L15 9' fill='none' stroke='%238F7433' stroke-width='1.6'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 7 L1 15 L9 15' fill='none' stroke='%238F7433' stroke-width='1.6'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7 15 L15 15 L15 7' fill='none' stroke='%238F7433' stroke-width='1.6'/%3E%3C/svg%3E"),
+      repeating-linear-gradient(180deg, rgba(255,255,255,0.028) 0px, rgba(255,255,255,0.028) 1px, transparent 1px, transparent 3px),
+      radial-gradient(circle, rgba(79,189,175,0.12), transparent 70%);
+    overflow:hidden;
+  }
+  .section-head h2{
+    display:inline-block; max-width:100%;
+    font-size:1.7rem;
+    background:linear-gradient(100deg, var(--text) 25%, var(--text) 55%, var(--gold) 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  @supports not (background-clip:text){ .section-head h2{ color:var(--text); } }
+  .section-head .head-text{ display:flex; flex-direction:column; align-items:center; gap:2px; min-width:0; }
+  .hud-tag{
+    display:inline-flex; align-items:center; justify-content:center; gap:7px; flex-wrap:wrap;
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.1em;
+    color:var(--teal); text-transform:uppercase; margin-bottom:8px; width:fit-content;
+  }
+  .hud-tag .dot{ width:6px; height:6px; box-shadow:none; flex:none; }
+  .signal-bars{ display:inline-flex; align-items:flex-end; gap:2px; height:11px; margin-left:2px; flex:none; }
+  .signal-bars span{
+    display:block; width:3px; background:var(--teal); border-radius:1px; opacity:0.9;
+    animation:sig 1.6s ease-in-out infinite;
+  }
+  .signal-bars span:nth-child(1){ height:4px; animation-delay:0s; }
+  .signal-bars span:nth-child(2){ height:7px; animation-delay:.2s; }
+  .signal-bars span:nth-child(3){ height:11px; animation-delay:.4s; }
+  .signal-bars span:nth-child(4){ height:6px; animation-delay:.6s; }
+  @keyframes sig{ 0%,100%{ opacity:0.35; transform:scaleY(0.7); } 50%{ opacity:1; transform:scaleY(1); } }
+  @media (prefers-reduced-motion: reduce){ .signal-bars span{ animation:none; opacity:0.85; } }
+  .section-head .idx{
+    font-family:'IBM Plex Mono',monospace; color:var(--muted-dim); font-size:11.5px;
+    border:1px solid var(--line); border-radius:20px; padding:5px 12px;
+    letter-spacing:0.06em; white-space:nowrap; margin-top:2px;
+  }
+  /* Desktop only: section title block left, animated header graphic right. */
+  @media (min-width:721px){
+    .section-head{
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+      text-align:left;
+    }
+    /* Desktop: keep titles/content on the left and pin the animated graphic to the far right. */
+    .section-head .head-text{
+      order:1;
+      align-items:flex-start;
+      text-align:left;
+      flex:0 1 auto;
+      min-width:0;
+    }
+    .section-head .hud-tag{
+      justify-content:flex-start;
+    }
+    .section-head .section-kicker{
+      text-align:left;
+    }
+    .section-head .idx{
+      order:2;
+      align-self:center;
+      margin-left:16px;
+      flex:none;
+    }
+    .section-head .hdr-scan,
+    .section-head .face-scan{
+      order:3;
+      margin:0 0 0 auto;
+      flex:none;
+    }
+  }
+  .section-kicker{
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--teal);
+    letter-spacing:0.14em; text-transform:uppercase; margin-bottom:10px;
+    text-align:center;
+  }
+  @media (max-width:640px){
+    .section-head{ padding:20px 16px 18px; gap:6px; }
+    .section-head h2{ font-size:1.32rem; }
+    .hud-tag{ font-size:9.5px; }
+    .section-head .idx{ font-size:10.5px; padding:4px 10px; }
+  }
+
+  /* ---------- Header scan badge: a shared HUD reticle used at the
+     top of every section header, themed per section with its own
+     icon — a wireframe face for Experience, a tool glyph for
+     Expertise, and so on. Corner brackets flash and a check blips
+     in on each completed sweep, like a console confirming a read. */
+  .hdr-scan{ position:relative; width:44px; height:44px; margin:0 auto 2px; }
+  .hdr-scan .hs-icon{
+    width:100%; height:100%; padding:10px; box-sizing:border-box;
+    color:var(--teal); opacity:.85;
+  }
+  .hdr-scan .hs-corner{ position:absolute; width:9px; height:9px; opacity:.8; animation:hs-corner-flash 6s ease-in-out infinite; }
+  .hdr-scan .hs-corner.tl{ top:-4px; left:-4px; border-top:1.4px solid var(--gold); border-left:1.4px solid var(--gold); }
+  .hdr-scan .hs-corner.tr{ top:-4px; right:-4px; border-top:1.4px solid var(--gold); border-right:1.4px solid var(--gold); }
+  .hdr-scan .hs-corner.bl{ bottom:-4px; left:-4px; border-bottom:1.4px solid var(--gold); border-left:1.4px solid var(--gold); }
+  .hdr-scan .hs-corner.br{ bottom:-4px; right:-4px; border-bottom:1.4px solid var(--gold); border-right:1.4px solid var(--gold); }
+  @keyframes hs-corner-flash{
+    0%,38%{ border-color:var(--gold); opacity:.8; }
+    46%{ border-color:var(--teal); opacity:1; }
+    58%{ border-color:var(--gold); opacity:.8; }
+  }
+  .hdr-scan .hs-line{
+    position:absolute; left:1px; right:1px; height:2px; top:2px;
+    background:linear-gradient(90deg, transparent, var(--teal), transparent);
+    box-shadow:0 0 6px 1px rgba(79,189,175,0.65);
+    mix-blend-mode:screen;
+    animation:hs-sweep 6s ease-in-out infinite;
+  }
+  @keyframes hs-sweep{
+    0%{ top:2px; opacity:0; }
+    8%{ opacity:1; }
+    42%{ top:calc(100% - 4px); opacity:1; }
+    52%{ opacity:0; }
+    100%{ opacity:0; top:2px; }
+  }
+  .hdr-scan .hs-check{
+    position:absolute; right:-6px; bottom:-6px; width:15px; height:15px; border-radius:50%;
+    background:var(--void); border:1.4px solid var(--teal);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; transform:scale(.4);
+    animation:hs-check-pop 6s ease-in-out infinite;
+  }
+  .hdr-scan .hs-check svg{ width:8px; height:8px; }
+  @keyframes hs-check-pop{
+    0%,40%{ opacity:0; transform:scale(.4); }
+    46%{ opacity:1; transform:scale(1.2); }
+    52%{ opacity:1; transform:scale(1); }
+    62%{ opacity:0; transform:scale(.6); }
+    100%{ opacity:0; transform:scale(.4); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hdr-scan .hs-line, .hdr-scan .hs-check, .hdr-scan .hs-corner{ animation:none; }
+  }
+  #expertise .hdr-scan .hs-line, #expertise .hdr-scan .hs-check, #expertise .hdr-scan .hs-corner{ animation-delay:-1s; }
+  #brands .hdr-scan .hs-line, #brands .hdr-scan .hs-check, #brands .hdr-scan .hs-corner{ animation-delay:-2s; }
+  #credentials .hdr-scan .hs-line, #credentials .hdr-scan .hs-check, #credentials .hdr-scan .hs-corner{ animation-delay:-3s; }
+  #education .hdr-scan .hs-line, #education .hdr-scan .hs-check, #education .hdr-scan .hs-corner{ animation-delay:-4s; }
+  @media (max-width:400px){
+    .signal-bars{ display:none; }
+  }
+
+  /* ---------- Field icons (bullets & category headers) ---------- */
+  .cat-head{ display:flex; align-items:center; gap:9px; margin-bottom:14px; }
+  .cat-head .fic{ width:17px; height:17px; color:var(--gold); flex:none; }
+  .cat-head h3{ margin:0; }
+  .array-cat h3{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--teal);
+    letter-spacing:0.1em; text-transform:uppercase; font-weight:600;
+  }
+
+  /* Regular duty-log bullets: thin outline icon, colour keyed to field
+     (teal = CCTV/monitoring & IT systems, gold = access control/compliance).
+     A vertical teal-to-gold gradient rail runs down the left edge of the
+     list, with a soft glowing segment that travels along it — the same
+     sweep language as feed-scan/fs-sweep elsewhere on the page. */
+  .feed-list{
+    position:relative; margin:16px 0 0; padding-left:18px; list-style:none;
+  }
+  .feed-list::before{
+    content:""; position:absolute; left:0; top:2px; bottom:2px; width:2px;
+    border-radius:2px;
+    background:linear-gradient(180deg, var(--teal), var(--gold));
+    opacity:.55;
+  }
+  .feed-list::after{
+    content:""; position:absolute; left:0; width:2px; height:34px; top:0;
+    border-radius:2px;
+    background:linear-gradient(180deg, transparent, var(--teal) 35%, var(--gold) 65%, transparent);
+    box-shadow:0 0 10px 1px rgba(79,189,175,0.7), 0 0 10px 1px rgba(201,162,74,0.55);
+    animation:rail-sweep 3.2s ease-in-out infinite;
+  }
+  @keyframes rail-sweep{
+    0%{ top:-6%; opacity:0; }
+    12%{ opacity:1; }
+    88%{ opacity:1; }
+    100%{ top:calc(100% - 6%); opacity:0; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .feed-list::after{ animation:none; display:none; }
+  }
+  .feed-list li{
+    display:flex; align-items:flex-start; gap:10px;
+    margin-bottom:10px; font-size:0.92rem; color:#C4CBD6;
+  }
+  .li-ic{
+    width:16px; height:16px; margin-top:2px; flex:none; color:var(--teal);
+  }
+  .li-ic.c-gold{ color:var(--gold); }
+  .li-ic.c-red{ color:var(--rec); }
+
+  /* Flagged achievements: filled alarm-style badge, visually separate
+     from the outline duty-log icons above */
+  .flagged li{
+    display:flex; align-items:flex-start; gap:10px;
+    font-size:0.87rem; color:var(--muted); margin-bottom:9px;
+  }
+  .flag-badge{
+    display:flex; align-items:center; justify-content:center; flex:none;
+    width:18px; height:18px; margin-top:1px; border-radius:5px;
+    background:linear-gradient(155deg, var(--gold), var(--gold-dim));
+    box-shadow:0 0 0 3px rgba(201,162,74,0.14);
+  }
+  .flag-badge svg{ width:10px; height:10px; color:var(--void); }
+  .feed.in-view .flag-badge{ animation:badge-ping .5s ease .7s both; }
+  .feed.in-view .flag-badge:nth-of-type(2){ animation-delay:.78s; }
+  .feed.in-view .flag-badge:nth-of-type(3){ animation-delay:.86s; }
+  @keyframes badge-ping{
+    0%{ transform:scale(.6); box-shadow:0 0 0 0 rgba(201,162,74,0.5); }
+    55%{ transform:scale(1.08); box-shadow:0 0 0 6px rgba(201,162,74,0); }
+    100%{ transform:scale(1); box-shadow:0 0 0 3px rgba(201,162,74,0.14); }
+  }
+
+  .reveal{ opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+
+  /* Card boot-in: every card-style block (monitoring feed, skills
+     category, credential, panel) powers on the same way — a slight
+     scale + brightness ramp on top of the fade, like a console tile
+     lighting up, instead of the plain fade used for text blocks. */
+  @keyframes card-boot{
+    from{ opacity:0; transform:translateY(16px) scale(.985); filter:brightness(.75); }
+    to{ opacity:1; transform:translateY(0) scale(1); filter:brightness(1); }
+  }
+  .feed.in-view, .array-cat.in-view, .cred-card.in-view, .panel-box.in-view{
+    animation:card-boot .6s cubic-bezier(.2,.75,.25,1) both;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .feed.in-view, .array-cat.in-view, .cred-card.in-view, .panel-box.in-view{ animation:none; }
+  }
+
+  /* ---------- Monitoring wall (Experience) ---------- */
+  .wall{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  @media (max-width:760px){ .wall{ grid-template-columns:1fr; } }
+
+  .feed{
+    background:
+      radial-gradient(320px circle at var(--mx,50%) var(--my,0%), rgba(201,162,74,0.07), transparent 65%),
+      var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    opacity:0; transform:translateY(14px);
+    transition:opacity .5s ease, transform .5s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+  .feed.in-view{ opacity:1; transform:translateY(0); }
+  .feed:hover{ border-color:var(--gold-dim); box-shadow:0 14px 32px -20px rgba(0,0,0,0.6); }
+
+  .feed-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:12px 16px; border-bottom:1px dashed var(--line);
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--muted);
+    background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);
+  }
+  .feed-head .cam-id{ color:var(--gold); letter-spacing:0.06em; }
+  .feed-head .rec{ display:flex; align-items:center; gap:6px; color:var(--rec); }
+  .feed-head .rec .dot{ background:var(--rec); animation:pulse 1.6s ease-out infinite; box-shadow:none; }
+  .feed-head .rec .dot::after{ content:""; }
+  .feed-head .archived{ color:var(--muted-dim); }
+
+  .feed-body{ padding:20px 20px 22px; }
+  .feed-role{ font-family:'Space Grotesk',sans-serif; font-size:1.15rem; font-weight:600; color:var(--text); }
+  .feed-org{ color:var(--teal); font-size:0.92rem; margin-top:3px; font-weight:500; }
+  .feed-loc{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--muted-dim); margin-top:6px; }
+
+  .flagged{
+    margin-top:20px; padding-top:18px; border-top:1px solid var(--line-soft);
+  }
+  .flagged-label{
+    display:inline-flex; align-items:center; gap:7px;
+    font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.16em;
+    color:var(--gold); text-transform:uppercase; margin-bottom:14px;
+    padding:5px 11px 5px 8px; width:fit-content;
+    border:1px solid var(--gold-dim); border-radius:20px;
+    background:rgba(201,162,74,0.08);
+  }
+  .flagged-label .label-ic{ width:11px; height:11px; flex:none; color:var(--gold); }
+  .flagged ul{ margin:0; padding-left:0; list-style:none; }
+
+  /* ---------- Sensor array (Skills) ---------- */
+  .array-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px 40px; }
+  @media (max-width:700px){ .array-grid{ grid-template-columns:1fr; } }
+  .chips{ display:flex; flex-wrap:wrap; gap:9px; list-style:none; padding:0; margin:0; }
+  .chips li{
+    font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--text);
+    background:var(--panel); border:1px solid var(--line); padding:7px 12px; border-radius:7px;
+    transition:border-color .15s ease, color .15s ease, transform .15s ease;
+  }
+  .chips li:hover{ border-color:var(--gold-dim); color:var(--gold); transform:translateY(-1px); }
+
+  /* ---------- Skill diagnostic meters (Technical Capability) ---------- */
+  .skill-meters{ display:flex; flex-direction:column; gap:15px; }
+  .skill-row{ }
+  .skill-top{
+    display:flex; align-items:baseline; justify-content:space-between; gap:10px;
+    margin-bottom:6px;
+  }
+  .skill-name{ font-size:0.87rem; color:var(--text); font-weight:500; }
+  .skill-level{
+    font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.09em;
+    color:var(--muted-dim); flex:none; white-space:nowrap;
+  }
+  .skill-level.lv-expert{ color:var(--gold); }
+  .skill-level.lv-advanced{ color:var(--teal); }
+  .skill-track{
+    position:relative; height:6px; border-radius:4px; overflow:hidden;
+    background:
+      repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 10%),
+      var(--line-soft);
+  }
+  .skill-fill{
+    position:relative; height:100%; width:0%; border-radius:4px;
+    background:linear-gradient(90deg, var(--teal), var(--gold));
+    transition:width 1.2s cubic-bezier(.16,1,.3,1);
+    box-shadow:0 0 8px rgba(201,162,74,0.35);
+  }
+  .skill-fill::after{
+    content:""; position:absolute; top:0; right:0; bottom:0; width:6px;
+    background:rgba(255,255,255,0.65); filter:blur(1.5px);
+    opacity:0; transition:opacity .3s ease .9s;
+  }
+  .skill-row.filled .skill-fill::after{ opacity:1; }
+  @media (prefers-reduced-motion: reduce){
+    .skill-fill{ transition:none; }
+    .skill-fill::after{ transition:none; }
+  }
+
+  /* ---------- Credentials ---------- */
+  .cred-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .cred-card{
+    background:var(--panel-raised); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px; display:flex; gap:14px; align-items:flex-start;
+    transition:opacity .5s ease, transform .5s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+  .cred-card:hover{ border-color:var(--gold-dim); transform:translateY(-2px); box-shadow:0 14px 28px -20px rgba(0,0,0,0.6); }
+  .cred-icon{
+    width:38px; height:38px; flex:none; color:var(--gold);
+    transition:transform .2s ease;
+  }
+  .cred-card:hover .cred-icon{ transform:scale(1.08); }
+  .cred-card h3{ font-size:1rem; color:var(--text); font-weight:600; font-family:'IBM Plex Sans',sans-serif; }
+  .cred-card p{ margin:5px 0 0; font-size:0.85rem; color:var(--muted); font-family:'IBM Plex Mono',monospace; }
+
+  /* ---------- Education / languages / traits ---------- */
+  .tri-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:28px; }
+  @media (max-width:800px){ .tri-grid{ grid-template-columns:1fr; } }
+  .panel-box{ background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px; }
+
+  /* Skills categories and log panels get the same idle "still live"
+     gradient-line sweep as the monitoring feed cards in Experience —
+     reusing feed-scan directly so every card type shares one signal
+     language instead of a different sweep per section. */
+  .array-cat, .panel-box{ position:relative; overflow:hidden; }
+  .array-cat::before, .panel-box::before{
+    content:""; position:absolute; left:0; right:0; height:3px; top:0%;
+    background:linear-gradient(90deg, var(--teal), var(--gold), var(--teal));
+    box-shadow:0 0 14px 2px rgba(79,189,175,0.85), 0 0 8px 1px rgba(201,162,74,0.7);
+    animation:feed-scan 3s linear infinite;
+    pointer-events:none; z-index:2;
+  }
+  .array-cat > *, .panel-box > *{ position:relative; z-index:1; }
+  .array-cat:nth-of-type(2)::before{ animation-delay:-1.5s; }
+  .array-cat:nth-of-type(3)::before{ animation-delay:-2s; }
+  .array-cat:nth-of-type(4)::before{ animation-delay:-2.5s; }
+  .panel-box:nth-of-type(2)::before{ animation-delay:-1.5s; }
+  .panel-box:nth-of-type(3)::before{ animation-delay:-6s; }
+  @media (prefers-reduced-motion: reduce){ .array-cat::before, .panel-box::before{ display:none; } }
+  .panel-box h3{
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; color:var(--gold);
+    text-transform:uppercase; margin-bottom:16px;
+  }
+  .edu-item{ margin-bottom:16px; }
+  .edu-item:last-child{ margin-bottom:0; }
+  .edu-item .deg{ font-weight:600; color:var(--text); font-size:0.94rem; }
+  .edu-item .inst{ color:var(--muted); font-size:0.85rem; margin-top:3px; }
+  .edu-item .yrs{ font-family:'IBM Plex Mono',monospace; color:var(--muted-dim); font-size:0.78rem; margin-top:2px; }
+
+  .lang-row{ display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.9rem; }
+  .lang-row span:first-child{ color:var(--text); }
+  .lang-row span:last-child{ font-family:'IBM Plex Mono',monospace; color:var(--muted-dim); font-size:0.78rem; }
+
+  .traits ul{ margin:0; padding-left:0; list-style:none; }
+  .traits li{
+    display:flex; align-items:flex-start; gap:9px;
+    font-size:0.87rem; color:#C4CBD6; margin-bottom:10px;
+  }
+  .traits .li-ic{ width:15px; height:15px; }
+
+  /* Education &amp; Profile panels: once the panel box itself has faded in, its
+     entries print in one line at a time rather than all at once. */
+  .panel-box .edu-item, .panel-box .lang-row, .traits li{
+    opacity:0; transform:translateY(8px);
+    transition:opacity .45s ease, transform .45s ease;
+  }
+  .panel-box.in-view .edu-item, .panel-box.in-view .lang-row, .panel-box.in-view.traits li{
+    opacity:1; transform:translateY(0);
+  }
+  .panel-box .edu-item:nth-of-type(1){ transition-delay:.15s; }
+  .panel-box .edu-item:nth-of-type(2){ transition-delay:.28s; }
+  .panel-box .lang-row:nth-of-type(1){ transition-delay:.15s; }
+  .panel-box .lang-row:nth-of-type(2){ transition-delay:.25s; }
+  .panel-box .lang-row:nth-of-type(3){ transition-delay:.35s; }
+  .panel-box.traits li:nth-child(1){ transition-delay:.15s; }
+  .panel-box.traits li:nth-child(2){ transition-delay:.25s; }
+  .panel-box.traits li:nth-child(3){ transition-delay:.35s; }
+  .panel-box.traits li:nth-child(4){ transition-delay:.45s; }
+
+  /* ---------- Contact / footer ---------- */
+  .contact-section{ border-bottom:none; text-align:center; padding:80px 0 40px; }
+  .contact-section h2{ font-size:2rem; }
+  .contact-section p{ color:var(--muted); max-width:480px; margin:14px auto 0; }
+  .contact-grid{
+    display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:32px;
+  }
+  footer{
+    text-align:center; padding:26px 0 50px; font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px; color:var(--muted-dim);
+  }
+  footer .rule{ width:60px; height:1px; background:var(--line); margin:0 auto 22px; }
+
+  .to-top{
+    position:fixed; right:20px; bottom:20px; z-index:150;
+    width:42px; height:42px; border-radius:50%;
+    background:var(--panel-raised); border:1px solid var(--line); color:var(--gold);
+    display:flex; align-items:center; justify-content:center; text-decoration:none;
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s, border-color .2s ease;
+  }
+  .to-top.visible{ opacity:1; visibility:visible; transform:translateY(0); }
+  .to-top:hover{ border-color:var(--gold); }
+  .to-top svg{ width:17px; height:17px; }
+
+  .print-fab{
+    position:fixed; right:20px; bottom:72px; z-index:150;
+    width:42px; height:42px; border-radius:50%;
+    background:var(--panel-raised); border:1px solid var(--line); color:var(--teal);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; padding:0;
+    transition:opacity .25s ease, transform .25s ease, border-color .2s ease;
+  }
+  .print-fab:hover{ border-color:var(--teal); transform:translateY(-2px); }
+  .print-fab svg{ width:17px; height:17px; }
+
+  @media print{
+    .statusbar{ position:static; }
+    .hero::before{ display:none; }
+    .feed{ opacity:1 !important; transform:none !important; break-inside:avoid; }
+    section{ break-inside:avoid; padding:32px 0; }
+    body{ background:#fff; color:#111; }
+  }
+
+  /* =========================================================
+     Section-specific ambient animations — each field gets its
+     own idle behaviour rather than one shared effect, so the
+     motion reinforces what each section is actually about.
+     ========================================================= */
+
+  /* Professional Track Record: a bright, solid gradient line sweeps top to
+     bottom through every feed card on a loop, like an active camera
+     doing a vertical refresh pass; hovering "locks focus" with a thin
+     gold ring. */
+  .feed{ position:relative; }
+  .feed::before{
+    content:""; position:absolute; left:0; right:0; height:3px; top:0%;
+    background:linear-gradient(90deg, var(--teal), var(--gold), var(--teal));
+    box-shadow:0 0 14px 2px rgba(79,189,175,0.85), 0 0 8px 1px rgba(201,162,74,0.7);
+    animation:feed-scan 3s linear infinite;
+    pointer-events:none; z-index:5;
+  }
+  .feed:nth-of-type(2n)::before{ animation-delay:-1.5s; }
+  @keyframes feed-scan{
+    0%{ top:0%; }
+    100%{ top:calc(100% - 3px); }
+  }
+  .feed-head, .feed-body{ position:relative; z-index:2; }
+  .feed::after{
+    content:""; position:absolute; inset:0; border-radius:inherit;
+    box-shadow:inset 0 0 0 1px transparent; transition:box-shadow .25s ease;
+    pointer-events:none; z-index:2;
+  }
+  .feed:hover::after{ box-shadow:inset 0 0 0 1px rgba(201,162,74,0.35); }
+  @media (prefers-reduced-motion: reduce){ .feed::before{ display:none; } }
+
+  /* Experience & Impact: the header badge is a dotted wireframe
+     face swept by a recognition line — the old boxed CCTV camera
+     glyph has been removed in favor of this single centered reticle,
+     consistent with the badge used on every other section header. */
+  .face-scan{ position:relative; width:44px; height:46px; margin:0 auto 2px; }
+  .face-scan .fw-svg{ width:100%; height:100%; overflow:visible; display:block; }
+  .face-scan .fw-head, .face-scan .fw-should{ fill:var(--teal); opacity:.8; }
+  .face-scan .fw-feat{ fill:var(--gold); opacity:.9; }
+  .face-scan .fs-corner{ position:absolute; width:8px; height:8px; opacity:.8; animation:fs-corner-flash 6s ease-in-out infinite; }
+  .face-scan .fs-corner.tl{ top:-4px; left:-4px; border-top:1.4px solid var(--gold); border-left:1.4px solid var(--gold); }
+  .face-scan .fs-corner.tr{ top:-4px; right:-4px; border-top:1.4px solid var(--gold); border-right:1.4px solid var(--gold); }
+  .face-scan .fs-corner.bl{ bottom:-4px; left:-4px; border-bottom:1.4px solid var(--gold); border-left:1.4px solid var(--gold); }
+  .face-scan .fs-corner.br{ bottom:-4px; right:-4px; border-bottom:1.4px solid var(--gold); border-right:1.4px solid var(--gold); }
+  @keyframes fs-corner-flash{
+    0%,38%{ border-color:var(--gold); opacity:.8; }
+    46%{ border-color:var(--teal); opacity:1; }
+    58%{ border-color:var(--gold); opacity:.8; }
+  }
+  .face-scan .fs-line{
+    position:absolute; left:1px; right:1px; height:2px; top:2px;
+    background:linear-gradient(90deg, transparent, var(--teal), transparent);
+    box-shadow:0 0 6px 1px rgba(79,189,175,0.65);
+    mix-blend-mode:screen;
+    animation:fs-sweep 6s ease-in-out infinite;
+  }
+  @keyframes fs-sweep{
+    0%{ top:2px; opacity:0; }
+    8%{ opacity:1; }
+    42%{ top:calc(100% - 4px); opacity:1; }
+    52%{ opacity:0; }
+    100%{ opacity:0; top:2px; }
+  }
+  .face-scan .fs-check{
+    position:absolute; right:-7px; bottom:-5px; width:15px; height:15px; border-radius:50%;
+    background:var(--void); border:1.4px solid var(--teal);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; transform:scale(.4);
+    animation:fs-check-pop 6s ease-in-out infinite;
+  }
+  .face-scan .fs-check svg{ width:8px; height:8px; }
+  @keyframes fs-check-pop{
+    0%,40%{ opacity:0; transform:scale(.4); }
+    46%{ opacity:1; transform:scale(1.2); }
+    52%{ opacity:1; transform:scale(1); }
+    62%{ opacity:0; transform:scale(.6); }
+    100%{ opacity:0; transform:scale(.4); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .face-scan .fs-line, .face-scan .fs-check, .face-scan .fs-corner{ animation:none; }
+  }
+
+  /* Technical Capability: category icons wiggle like a tool being
+     worked with (spanner adjusting a fitting); hovering the card spins
+     the icon a full turn, like torquing it home. */
+  #expertise .cat-head .fic{
+    animation:tool-wiggle 3.2s ease-in-out infinite;
+    transform-box:fill-box; transform-origin:50% 85%;
+  }
+  #expertise .array-cat:nth-child(1) .fic{ animation-delay:0s; }
+  #expertise .array-cat:nth-child(2) .fic{ animation-delay:.7s; }
+  #expertise .array-cat:nth-child(3) .fic{ animation-delay:1.4s; }
+  #expertise .array-cat:nth-child(4) .fic{ animation-delay:2.1s; }
+  @keyframes tool-wiggle{
+    0%,100%{ transform:rotate(0deg); }
+    20%{ transform:rotate(-14deg); }
+    40%{ transform:rotate(9deg); }
+    60%{ transform:rotate(-6deg); }
+    80%{ transform:rotate(3deg); }
+  }
+  #expertise .array-cat:hover .cat-head .fic{ animation:tool-turn .55s ease-out; }
+  @keyframes tool-turn{ from{ transform:rotate(0deg); } to{ transform:rotate(360deg); } }
+  /* Chips land like tools being set down on a bench as the category
+     scrolls into view, each settling a beat after the last. */
+  #expertise .chips li{
+    opacity:0; transform:translateY(-8px) rotate(-4deg);
+    transition:opacity .4s ease, transform .45s cubic-bezier(.34,1.56,.64,1);
+  }
+  #expertise .array-cat.in-view .chips li{ opacity:1; transform:translateY(0) rotate(0deg); }
+  #expertise .array-cat.in-view .chips li:nth-child(1){ transition-delay:.05s; }
+  #expertise .array-cat.in-view .chips li:nth-child(2){ transition-delay:.11s; }
+  #expertise .array-cat.in-view .chips li:nth-child(3){ transition-delay:.17s; }
+  #expertise .array-cat.in-view .chips li:nth-child(4){ transition-delay:.23s; }
+  #expertise .array-cat.in-view .chips li:nth-child(5){ transition-delay:.29s; }
+  @media (prefers-reduced-motion: reduce){ #expertise .cat-head .fic{ animation:none; } }
+
+  /* Brands & Platforms: reads like a product shelf — each icon breathes
+     with a soft power-on glow, and tags catch a glossy light sweep on
+     hover like a product case reflecting light; entering view they
+     rise into place as if being unboxed. */
+  #brands .cat-head .fic{ animation:product-glow 3.8s ease-in-out infinite; }
+  #brands .array-cat:nth-child(2) .fic{ animation-delay:1.1s; }
+  #brands .array-cat:nth-child(3) .fic{ animation-delay:2.2s; }
+  @keyframes product-glow{
+    0%,100%{ filter:drop-shadow(0 0 0 rgba(201,162,74,0)); }
+    50%{ filter:drop-shadow(0 0 6px rgba(201,162,74,0.65)); }
+  }
+  #brands .chips li{
+    position:relative; overflow:hidden;
+    opacity:0; transform:translateY(10px) scale(0.94);
+    transition:opacity .4s ease, transform .4s ease, border-color .15s ease, color .15s ease;
+  }
+  #brands .array-cat.in-view .chips li{ opacity:1; transform:translateY(0) scale(1); }
+  #brands .array-cat.in-view .chips li:nth-child(1){ transition-delay:.04s; }
+  #brands .array-cat.in-view .chips li:nth-child(2){ transition-delay:.09s; }
+  #brands .array-cat.in-view .chips li:nth-child(3){ transition-delay:.14s; }
+  #brands .array-cat.in-view .chips li:nth-child(4){ transition-delay:.19s; }
+  #brands .array-cat.in-view .chips li:nth-child(5){ transition-delay:.24s; }
+  #brands .array-cat.in-view .chips li:nth-child(6){ transition-delay:.29s; }
+  #brands .array-cat.in-view .chips li:nth-child(7){ transition-delay:.34s; }
+  #brands .chips li::before{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.16) 50%, transparent 65%);
+    transform:translateX(-130%); pointer-events:none;
+  }
+  #brands .chips li:hover::before{ animation:product-shine .7s ease-out; }
+  @keyframes product-shine{ to{ transform:translateX(130%); } }
+  #brands .chips li:hover{ transform:translateY(-2px) scale(1.03); }
+
+  /* Brand category colour scheme: each equipment category carries its
+     own accent drawn from colours already used elsewhere on the page —
+     alert-red for intruder alarm, teal for CCTV/monitoring, gold for
+     access control — so the shelf reads as three distinct systems
+     rather than one flat gold treatment. */
+  #brands .cat-alarm{ --cat-accent:#D9564A; --cat-border:rgba(217,86,74,.32); --cat-tint:rgba(217,86,74,.11); }
+  #brands .cat-cctv{ --cat-accent:#4FBDAF; --cat-border:rgba(79,189,175,.30); --cat-tint:rgba(79,189,175,.11); }
+  #brands .cat-access{ --cat-accent:#D9B15C; --cat-border:rgba(217,177,92,.32); --cat-tint:rgba(217,177,92,.11); }
+  #brands .array-cat{
+    border-color:var(--cat-border);
+    background:radial-gradient(120% 140% at 0% 0%, var(--cat-tint), transparent 60%), var(--panel);
+  }
+  #brands .array-cat:hover{ border-color:var(--cat-accent); }
+  #brands .cat-head .fic{ color:var(--cat-accent); }
+  @keyframes product-glow-accent{
+    0%,100%{ filter:drop-shadow(0 0 0 transparent); }
+    50%{ filter:drop-shadow(0 0 6px var(--cat-accent)); }
+  }
+  #brands .cat-head .fic{ animation:product-glow-accent 3.8s ease-in-out infinite; }
+  #brands .array-cat h3{ color:var(--cat-accent); }
+  #brands .chips li::after{
+    content:""; order:-1; width:5px; height:5px; border-radius:50%;
+    background:var(--cat-accent); flex:none; box-shadow:0 0 5px var(--cat-accent);
+  }
+  #brands .chips li{ display:flex; align-items:center; gap:7px; border-color:var(--cat-border); }
+  #brands .chips li:hover{ border-color:var(--cat-accent); color:var(--cat-accent); }
+  #brands .array-cat::before{
+    background:linear-gradient(90deg, color-mix(in srgb, var(--cat-accent) 70%, transparent), var(--cat-accent), color-mix(in srgb, var(--cat-accent) 70%, transparent));
+    box-shadow:0 0 14px 2px color-mix(in srgb, var(--cat-accent) 65%, transparent);
+  }
+
+  /* Licenses &amp; Compliance: hovering mimics a badge reader authenticating —
+     a light sweep crosses the card and the icon flashes gold-to-teal
+     like an accept beep. */
+  .cred-card{ position:relative; overflow:hidden; }
+  .cred-card::before{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(100deg, transparent 40%, rgba(201,162,74,0.16) 50%, transparent 60%);
+    transform:translateX(-140%); pointer-events:none;
+  }
+  .cred-card:hover::before{ animation:badge-scan .9s ease-out; }
+  @keyframes badge-scan{ to{ transform:translateX(140%); } }
+  .cred-card:hover .cred-icon{ animation:badge-accept .6s ease; }
+  @keyframes badge-accept{
+    0%{ color:var(--gold); }
+    50%{ color:var(--teal); transform:scale(1.15); }
+    100%{ color:var(--gold); transform:scale(1.08); }
+  }
+
+  /* Education &amp; Profile: entries read like sequential log lines — no blinking
+     cursor here (kept unique to the profile eyebrow), just a calm
+     staggered print-in handled by the reveal classes already on the
+     panel boxes; a faint top rule doubles as a log divider. */
+  .panel-box h3{ position:relative; padding-bottom:10px; }
+  .panel-box h3::after{
+    content:""; position:absolute; left:0; bottom:0; height:1px; width:26px;
+    background:var(--gold-dim);
+  }
+
+  /* Channel Open: contact buttons ring outward on hover, like a
+     connection handshake completing. */
+  .contact-grid .btn{ position:relative; }
+  .contact-grid .btn::after{
+    content:""; position:absolute; inset:0; border-radius:inherit;
+    box-shadow:0 0 0 0 rgba(201,162,74,0.5); pointer-events:none;
+  }
+  .contact-grid .btn:hover::after{ animation:handshake .8s ease-out; }
+  @keyframes handshake{
+    0%{ box-shadow:0 0 0 0 rgba(201,162,74,0.45); }
+    100%{ box-shadow:0 0 0 10px rgba(201,162,74,0); }
+  }
+
+/* ===== UI REFINEMENT — recruiter-first portfolio ===== */
+:root{--surface:#101722;--surface-2:#0d141e;--line-soft:rgba(150,170,190,.14);--teal-soft:#63d6ca;--gold-soft:#e3bd69;}
+html{scroll-behavior:smooth;}
+body{background:radial-gradient(900px 500px at 82% 5%,rgba(58,188,176,.08),transparent 60%),radial-gradient(700px 420px at 8% 28%,rgba(201,162,74,.055),transparent 60%),var(--void);}
+.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto;}
+.statusbar{position:sticky;top:0;z-index:50;background:rgba(8,12,18,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line-soft);}
+.statusbar-inner{min-height:54px;}
+.status-live{font-size:10px;letter-spacing:.13em;}
+#site-nav a{transition:color .2s ease,background .2s ease,border-color .2s ease;}
+#site-nav a:hover{color:var(--text);background:rgba(99,214,202,.07);border-color:rgba(99,214,202,.2);}
+.hero{padding:clamp(62px,9vw,108px) 0 76px;position:relative;}
+.hero:after{content:'';position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);}
+.hero-grid{position:relative;}
+.eyebrow{font-size:11px;letter-spacing:.16em;}
+h1.name{font-size:clamp(3rem,7vw,5.5rem);line-height:.95;letter-spacing:-.055em;margin-bottom:14px;}
+.role-line{font-size:clamp(.9rem,1.7vw,1.15rem);line-height:1.7;max-width:850px;}
+.summary{max-width:820px;font-size:1.02rem;line-height:1.82;color:#cbd3df;text-align:left!important;}
+.cta-row{margin-top:30px;}
+.btn{transition:transform .2s ease,border-color .2s ease,background .2s ease;}
+.btn:hover{transform:translateY(-2px);border-color:rgba(99,214,202,.45);background:rgba(99,214,202,.06);}
+section{scroll-margin-top:76px;}
+section:not(.contact-section){padding-top:86px;padding-bottom:86px;}
+.section-head{margin-bottom:34px;}
+.section-head h2{font-size:clamp(1.45rem,3vw,2.15rem);letter-spacing:-.025em;}
+.wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.feed{background:linear-gradient(145deg,rgba(18,27,38,.94),rgba(10,16,24,.94));border:1px solid var(--line-soft);border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.14);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.feed:hover{transform:translateY(-4px);border-color:rgba(99,214,202,.24);box-shadow:0 20px 50px rgba(0,0,0,.24);}
+.feed-body{padding:22px;}
+.feed-role{font-size:1.15rem;}
+.feed-list li{line-height:1.62;}
+.flagged{margin-top:18px;padding:14px 15px;border-radius:10px;background:rgba(201,162,74,.055);border:1px solid rgba(201,162,74,.16);}
+.array{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.array-cat,.cred-card,.panel-box{background:rgba(14,21,30,.72);border:1px solid var(--line-soft);border-radius:14px;box-shadow:0 10px 32px rgba(0,0,0,.1);}
+.array-cat{padding:22px;}
+.chips li{border-radius:7px!important;padding:8px 10px!important;}
+.cred-card,.panel-box{transition:transform .22s ease,border-color .22s ease;}
+.cred-card:hover,.panel-box:hover{transform:translateY(-3px);border-color:rgba(99,214,202,.2);}
+.contact-section{margin-top:0;padding:86px 0 70px;background:linear-gradient(180deg,transparent,rgba(13,20,30,.65));border-top:1px solid var(--line-soft);}
+.contact-section h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.04em;}
+.contact-grid{display:flex;gap:10px;flex-wrap:wrap;}
+footer{padding:28px 0 42px;}
+/* The download and back-to-top buttons are fixed to the bottom-right
+   corner of the viewport, so whenever the footer (the last thing on
+   the page) is in view, those buttons sit directly on top of its
+   centered text. Reserving space on the right keeps the credit line
+   clear of that corner instead of running underneath it. */
+@media (max-width:900px){
+  footer{ padding-left:76px; padding-right:76px; box-sizing:border-box; }
+}
+@media(max-width:820px){.wall,.array{grid-template-columns:1fr 1fr;}.hero{padding-top:70px;}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,1160px);}.status-live{max-width:62%;}.status-live-text{overflow:hidden;text-overflow:ellipsis;}h1.name{font-size:clamp(2.7rem,15vw,4.2rem);}.summary{font-size:.96rem;line-height:1.7;}.wall,.array{grid-template-columns:1fr;}section:not(.contact-section){padding-top:62px;padding-bottom:62px;}.feed-body{padding:18px;}.contact-grid{display:grid;grid-template-columns:1fr;}.contact-grid .btn{width:100%;justify-content:center;}.hero-grid:before{content:'SECURITY SYSTEMS • CCTV • ELV • SIRA';display:block;margin-bottom:24px;font:600 9px/1.2 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(99,214,202,.72);}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;}}
+
+</style>
+
+<style id="responsive-alignment-fixes">
+/* ===== Responsive alignment + content readability fixes ===== */
+html { overflow-x: hidden; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap, .container, main, section {
+  min-width: 0;
+}
+
+.wrap {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+/* Prevent flex/grid children from forcing horizontal overflow */
+header, nav, .hero, .hero-grid, .content-grid, .wall,
+.feed, .feed-body, .panel-box, .array-cat, .cred-card,
+.contact-grid, .cta-row {
+  min-width: 0;
+}
+
+/* Hero/summary: left aligned, readable line length */
+.summary {
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  text-justify: auto;
+  hyphens: none;
+  overflow-wrap: anywhere;
+}
+
+/* General content: do not justify short UI labels/headings.
+   (footer intentionally excluded — it's designed to be centered,
+   see its own rule under "Contact / footer" above, complete with a
+   centered divider; this list previously swept it in by accident.) */
+h1, h2, h3, h4, .eyebrow, .role-line, .section-kicker,
+.feed-head, .cam-id, .rec, .archived, .hud-tag, .idx,
+.flagged-label, .cat-head, .btn, nav a {
+  text-align: left;
+  text-justify: auto;
+}
+
+/* Body copy gets controlled justification only where it improves readability */
+.feed-list li,
+.feed-body p,
+.panel-box p,
+.array-cat p,
+.contact-section p {
+  text-align: left;
+  text-justify: auto;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Avoid ugly justification gaps on narrow screens */
+@media (min-width: 760px) {
+  .feed-body p,
+  .panel-box p,
+  .contact-section p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+}
+
+/* Lists must align icon + text consistently */
+.feed-list {
+  width: 100%;
+}
+
+.feed-list li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 10px;
+}
+
+.feed-list li > * {
+  min-width: 0;
+}
+
+.li-ic {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+}
+
+/* Flagged achievement lists */
+.flagged ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.flagged li {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Cards/grid: prevent uneven overflow */
+.wall,
+.content-grid,
+.hero-grid,
+.contact-grid {
+  width: 100%;
+}
+
+.feed, .panel-box, .cred-card, .array-cat {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Buttons/contact items wrap cleanly */
+.cta-row,
+.contact-grid {
+  align-items: stretch;
+}
+
+.btn {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+/* Navigation */
+@media (max-width: 760px) {
+  .wrap {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .hero,
+  .hero-grid,
+  .content-grid {
+    text-align: left;
+  }
+
+  .summary {
+    max-width: none;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  h1.name {
+    max-width: 100%;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+
+  .role-line {
+    line-height: 1.55;
+  }
+
+  .wall,
+  .content-grid,
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-row .btn,
+  .contact-grid .btn {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Disable desktop-style justification on mobile */
+  .summary,
+  .feed-body p,
+  .panel-box p,
+  .contact-section p {
+    text-align: left !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .wrap {
+    width: calc(100% - 24px);
+  }
+
+  .summary {
+    font-size: 0.94rem;
+    line-height: 1.62;
+  }
+
+  .feed-list li {
+    column-gap: 8px;
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .feed-head {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+  }
+
+  .idx {
+    display: none;
+  }
+
+  .contact-grid {
+    gap: 8px;
+  }
+
+  footer {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Accessibility: reduce motion cleanly */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* ===== LEFT-EDGE GRADIENT SIGNAL — SOFT PHOTO-LIKE SHADE =====
+   Animation only: a slow, soft teal/amber glow travels down the left edge. */
+.feed::before,
+.array-cat::before,
+.panel-box::before{
+  left:0;
+  right:auto;
+  top:-24%;
+  bottom:auto;
+  width:3px;
+  height:24%;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    rgba(79,189,175,.08) 16%,
+    rgba(79,189,175,.42) 34%,
+    rgba(201,162,74,.72) 50%,
+    rgba(79,189,175,.42) 66%,
+    rgba(79,189,175,.08) 84%,
+    transparent 100%);
+  box-shadow:
+    0 0 4px rgba(79,189,175,.38),
+    0 0 10px rgba(79,189,175,.22),
+    0 0 18px rgba(201,162,74,.14);
+  opacity:.78;
+  filter:blur(.15px);
+  animation:feed-scan-left 14s cubic-bezier(.37,0,.63,1) infinite;
+  pointer-events:none;
+  z-index:5;
+}
+@keyframes feed-scan-left{
+  0%{ top:-24%; opacity:0; }
+  12%{ top:-12%; opacity:.08; }
+  24%{ opacity:.30; }
+  38%{ opacity:.62; }
+  52%{ opacity:.78; }
+  66%{ opacity:.58; }
+  80%{ opacity:.28; }
+  92%{ top:92%; opacity:.08; }
+  100%{ top:100%; opacity:0; }
+}
+.feed:nth-of-type(2n)::before{ animation-delay:-3.2s; }
+.array-cat:nth-of-type(2)::before{ animation-delay:-1.6s; }
+.array-cat:nth-of-type(3)::before{ animation-delay:-3.2s; }
+.array-cat:nth-of-type(4)::before{ animation-delay:-4.8s; }
+.panel-box:nth-of-type(2)::before{ animation-delay:-1.6s; }
+.panel-box:nth-of-type(3)::before{ animation-delay:-3.2s; }
+@media (prefers-reduced-motion: reduce){
+  .feed::before, .array-cat::before, .panel-box::before{ display:none; }
+}
+</style>
+
+
+<style id="final-ui-polish">
+/* ===== FINAL UI POLISH ===== */
+:root{
+  --ui-max:1180px;
+  --ui-gutter:clamp(18px,3vw,42px);
+  --ui-radius:16px;
+}
+
+/* Consistent page rhythm */
+.wrap{
+  width:min(var(--ui-max),calc(100% - (var(--ui-gutter) * 2))) !important;
+}
+
+/* Premium section rhythm */
+section{
+  scroll-margin-top:90px;
+}
+
+section + section{
+  border-top:1px solid rgba(255,255,255,.045);
+}
+
+/* Hero */
+.hero{
+  position:relative;
+  isolation:isolate;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:auto 5% -8%;
+  height:180px;
+  background:radial-gradient(ellipse,rgba(79,189,175,.08),transparent 68%);
+  pointer-events:none;
+  z-index:-1;
+}
+
+.summary{
+  max-width:780px !important;
+  font-size:clamp(.96rem,1.35vw,1.06rem) !important;
+  line-height:1.75 !important;
+  letter-spacing:.005em;
+}
+
+/* Section headers */
+.head-text h2,
+section h2{
+  line-height:1.15;
+}
+
+.section-kicker,
+.eyebrow,
+.hud-tag{
+  white-space:normal;
+}
+
+/* Experience cards */
+.feed{
+  border-radius:var(--ui-radius);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+
+.feed:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 40px rgba(0,0,0,.18);
+}
+
+.feed-body{
+  min-width:0;
+}
+
+.feed-body p,
+.feed-list li{
+  line-height:1.65;
+}
+
+.flagged{
+  margin-top:18px;
+  border-radius:12px;
+}
+
+/* Skills / credentials cards */
+.array-cat,
+.cred-card,
+.panel-box{
+  border-radius:var(--ui-radius);
+  min-width:0;
+  overflow:hidden;
+}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.chips li{
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+
+/* Contact */
+.contact-section{
+  text-align:left;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:10px;
+}
+
+.contact-grid .btn{
+  min-width:0;
+  width:100%;
+  justify-content:center;
+  text-align:center;
+}
+
+/* Desktop text justification only for substantial prose */
+@media (min-width:900px){
+  .feed-body p,
+  .panel-box p,
+  .contact-section > .wrap > p:not(.section-kicker){
+    text-align:justify;
+    text-justify:inter-word;
+    hyphens:auto;
+  }
+}
+
+/* Tablet */
+@media (max-width:899px){
+  .contact-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width:700px){
+  :root{
+    --ui-gutter:14px;
+  }
+
+  .wrap{
+    width:calc(100% - 28px) !important;
+  }
+
+  .hero{
+    padding-top:clamp(34px,8vw,64px);
+  }
+
+  h1.name{
+    font-size:clamp(2.15rem,12vw,3.1rem) !important;
+    line-height:1.02 !important;
+    letter-spacing:-.035em;
+  }
+
+  .role-line{
+    font-size:.88rem !important;
+    line-height:1.65 !important;
+  }
+
+  .summary,
+  .feed-body p,
+  .panel-box p,
+  .contact-section > .wrap > p:not(.section-kicker){
+    text-align:left !important;
+    text-justify:auto !important;
+    hyphens:none !important;
+  }
+
+  .summary{
+    line-height:1.65 !important;
+  }
+
+  .wall,
+  .content-grid,
+  .hero-grid{
+    gap:14px !important;
+  }
+
+  .feed{
+    border-radius:14px;
+  }
+
+  .feed-head{
+    align-items:flex-start;
+  }
+
+  .feed-list li{
+    grid-template-columns:15px minmax(0,1fr);
+    font-size:.9rem;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .contact-grid .btn{
+    justify-content:flex-start;
+    text-align:left;
+  }
+
+  footer{
+    font-size:.72rem;
+    line-height:1.6;
+  }
+}
+
+/* Very small screens */
+@media (max-width:380px){
+  .wrap{
+    width:calc(100% - 20px) !important;
+  }
+
+  .summary{
+    font-size:.9rem !important;
+  }
+
+  .feed-list li{
+    font-size:.84rem;
+  }
+
+  .btn{
+    padding:10px 13px !important;
+  }
+}
+
+/* Keyboard focus */
+a:focus-visible,
+button:focus-visible{
+  outline:2px solid var(--teal,#4FBDAF);
+  outline-offset:3px;
+  border-radius:7px;
+}
+</style>
+
+
+<style id="desktop-profile-justification">
+/* Desktop profile content justification */
+@media (min-width: 900px){
+  .hero .summary{
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+  }
+}
+</style>
+
+
+<style id="mobile-responsive-final-fix">
+/* ===== FINAL MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 899px){
+  html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden !important;
+  }
+
+  .wrap{
+    width:calc(100% - 28px) !important;
+    max-width:100% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .statusbar{
+    width:100%;
+    overflow:hidden;
+  }
+
+  .statusbar-inner{
+    min-width:0 !important;
+    width:100%;
+    padding:0 14px;
+  }
+
+  .status-live{
+    max-width:calc(100% - 48px) !important;
+  }
+  .status-live-text{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  #site-nav{
+    max-width:100vw;
+    overflow:hidden;
+  }
+
+  .hero{
+    padding:42px 0 52px !important;
+  }
+
+  .hero-grid{
+    display:block !important;
+    width:100% !important;
+  }
+
+  .hero-grid > div{
+    width:100%;
+    min-width:0;
+  }
+
+  .eyebrow{
+    font-size:9px !important;
+    line-height:1.5 !important;
+    letter-spacing:.11em !important;
+    overflow-wrap:anywhere;
+  }
+
+  h1.name{
+    font-size:clamp(2.25rem,13vw,3.4rem) !important;
+    line-height:1.02 !important;
+    letter-spacing:-.04em !important;
+    max-width:100%;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+
+  .role-line{
+    max-width:100%;
+    font-size:.86rem !important;
+    line-height:1.65 !important;
+    overflow-wrap:anywhere;
+  }
+
+  .summary{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    font-size:.94rem !important;
+    line-height:1.7 !important;
+    text-align:left !important;
+    text-justify:auto !important;
+    hyphens:none !important;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+
+  .cta-row{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:9px !important;
+    width:100% !important;
+    margin-top:22px !important;
+  }
+
+  .cta-row .btn{
+    width:100% !important;
+    min-height:44px;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:normal !important;
+  }
+
+  section:not(.contact-section){
+    padding-top:52px !important;
+    padding-bottom:52px !important;
+  }
+
+  .section-head{
+    margin-bottom:22px !important;
+  }
+
+  .section-head h2,
+  .head-text h2,
+  section h2{
+    font-size:1.5rem !important;
+    line-height:1.2 !important;
+  }
+
+  .wall,
+  .array,
+  .content-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+    gap:14px !important;
+  }
+
+  .feed,
+  .panel-box,
+  .array-cat,
+  .cred-card{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  .feed-body{
+    padding:17px !important;
+  }
+
+  .feed-head{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 9px;
+    min-width:0;
+  }
+
+  .feed-list{
+    width:100% !important;
+    padding-left:16px !important;
+  }
+
+  .feed-list li{
+    grid-template-columns:15px minmax(0,1fr) !important;
+    column-gap:8px !important;
+    font-size:.88rem !important;
+    line-height:1.58 !important;
+    min-width:0;
+  }
+
+  .feed-list li > *{
+    min-width:0;
+    max-width:100%;
+  }
+
+  .flagged{
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .array-cat,
+  .cred-card,
+  .panel-box{
+    padding:17px !important;
+  }
+
+  .chips{
+    gap:6px !important;
+  }
+
+  .chips li{
+    max-width:100%;
+    font-size:.78rem;
+    overflow-wrap:anywhere;
+  }
+
+  .contact-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+    gap:8px !important;
+  }
+
+  .contact-grid .btn{
+    width:100% !important;
+    min-width:0 !important;
+    justify-content:flex-start !important;
+    text-align:left !important;
+  }
+
+  .portrait-frame{
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  img, svg, video, iframe{
+    max-width:100% !important;
+  }
+
+  footer{
+    width:100%;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+}
+
+@media (max-width:480px){
+  .wrap{
+    width:calc(100% - 22px) !important;
+  }
+
+  .hero{
+    padding-top:34px !important;
+  }
+
+  .eyebrow{
+    font-size:8px !important;
+  }
+
+  h1.name{
+    font-size:clamp(2rem,14vw,2.8rem) !important;
+  }
+
+  .role-line{
+    font-size:.82rem !important;
+  }
+
+  .summary{
+    font-size:.91rem !important;
+    line-height:1.65 !important;
+  }
+
+  .feed-body,
+  .array-cat,
+  .cred-card,
+  .panel-box{
+    padding:15px !important;
+  }
+
+  .feed-list li{
+    font-size:.85rem !important;
+  }
+
+  .btn{
+    min-height:43px;
+    padding:10px 12px !important;
+  }
+}
+</style>
+
+
+<style id="mobile-responsive-v2">
+/* V2: preserve the intended mobile hero order and remove layout regressions */
+@media (max-width: 720px){
+  .hero-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) !important;
+    justify-items:center !important;
+    align-items:start !important;
+    text-align:center !important;
+    gap:26px !important;
+    width:100% !important;
+  }
+
+  .hero-grid > div:first-child{
+    order:2 !important;
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  .hero-grid .portrait-frame{
+    order:1 !important;
+    justify-self:center !important;
+    width:158px !important;
+    height:172px !important;
+    max-width:calc(100vw - 44px) !important;
+  }
+
+  .hero-grid .eyebrow{
+    justify-content:center !important;
+    flex-wrap:wrap !important;
+  }
+
+  .hero-grid .role-line{
+    text-align:center !important;
+  }
+
+  .hero-grid .summary{
+    margin-left:auto !important;
+    margin-right:auto !important;
+    text-align:left !important;
+  }
+
+  .hero-grid .cta-row{
+    justify-content:center !important;
+  }
+}
+
+@media (max-width:480px){
+  .hero-grid{
+    gap:22px !important;
+  }
+
+  .hero-grid .portrait-frame{
+    width:142px !important;
+    height:155px !important;
+  }
+
+  .hero-grid .summary{
+    font-size:.91rem !important;
+    line-height:1.65 !important;
+  }
+}
+</style>
+
+<style id="contact-btn-icons">
+.btn-ic{ width:15px; height:15px; flex:none; color:currentColor; opacity:0.85; }
+.btn.primary .btn-ic{ color:var(--void); opacity:1; }
+.cred-status{
+  display:inline-flex; align-items:center; gap:7px; margin-top:10px;
+  font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.09em;
+  color:var(--teal);
+}
+.cred-status .dot{ width:6px; height:6px; }
+</style>
+
+<style id="contact-centered-final">
+/* Keep the contact block a centered cluster of pill buttons instead of
+   a full-width 4-column grid, at every viewport width. */
+.contact-section > .wrap{
+  text-align:center !important;
+}
+.contact-section .contact-grid{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  width:auto !important;
+  max-width:720px !important;
+  margin:32px auto 0 !important;
+}
+.contact-section .contact-grid .btn{
+  width:auto !important;
+  flex:0 1 auto !important;
+  display:inline-flex !important;
+  justify-content:center !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+}
+@media (max-width:560px){
+  .contact-section .contact-grid .btn{
+    width:100% !important;
+    flex:1 1 100% !important;
+    white-space:normal !important;
+  }
+}
+</style>
+
+
+<style id="clean-profile-photo-text">
+/* Remove location text displayed on/around the profile photo */
+.portrait-frame .photo-location,
+.portrait-frame .location,
+.portrait-frame .portrait-location,
+.portrait-frame .photo-label{
+  display:none !important;
+}
+</style>
+
+
+<style id="desktop-contact-final-fix">
+/* ===== DESKTOP CONTACT SECTION FIX ===== */
+@media (min-width: 900px){
+  .contact-section{
+    padding:86px 0 72px !important;
+  }
+
+  .contact-section > .wrap{
+    width:min(1180px, calc(100% - 84px)) !important;
+    margin-inline:auto !important;
+  }
+
+  .contact-section .section-kicker{
+    margin-bottom:10px;
+  }
+
+  .contact-section h2{
+    max-width:820px;
+    margin-bottom:14px;
+    line-height:1.12 !important;
+  }
+
+  .contact-section > .wrap > p:not(.section-kicker){
+    max-width:820px;
+    margin-bottom:28px;
+    line-height:1.7;
+  }
+
+  .contact-grid{
+    display:grid !important;
+    grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+    gap:12px !important;
+    width:100% !important;
+    align-items:stretch;
+  }
+
+  .contact-grid .btn{
+    min-width:0 !important;
+    min-height:52px;
+    width:100% !important;
+    padding:13px 16px !important;
+    display:flex !important;
+    align-items:center;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:normal !important;
+    overflow-wrap:anywhere;
+    line-height:1.35;
+  }
+
+  .contact-grid .btn:hover{
+    transform:translateY(-2px);
+  }
+}
+
+/* Large desktop: keep contact buttons balanced */
+@media (min-width: 1200px){
+  .contact-grid{
+    gap:14px !important;
+  }
+}
+
+/* Tablet: don't force four narrow columns */
+@media (min-width: 700px) and (max-width: 899px){
+  .contact-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+    gap:10px !important;
+  }
+}
+</style>
+
+
+<style id="final-desktop-photo-and-contact-fix">
+/* ===== FINAL DESKTOP HERO / PHOTO / CONTACT FIX ===== */
+@media (min-width: 900px){
+
+  /* Hero: clean two-column desktop layout */
+  .hero-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 220px !important;
+    gap:48px !important;
+    align-items:center !important;
+    width:100% !important;
+  }
+
+  .hero-grid > div:first-child{
+    min-width:0 !important;
+  }
+
+  /* Profile photo: larger, clean, aligned to the right */
+  .hero-grid .portrait-frame{
+    display:block !important;
+    width:220px !important;
+    height:250px !important;
+    margin:0 !important;
+    justify-self:end !important;
+    align-self:center !important;
+    flex:none !important;
+    overflow:visible !important;
+  }
+
+  /* Remove the old photo caption/tag completely */
+  .hero-grid .portrait-tag{
+    display:none !important;
+  }
+
+  .hero-grid .portrait-frame img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    display:block !important;
+  }
+
+  /* Profile-section contact buttons: ONE ROW on desktop */
+  .hero .cta-row{
+    display:grid !important;
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:10px !important;
+    width:100% !important;
+    max-width:900px !important;
+    align-items:stretch !important;
+  }
+
+  .hero .cta-row .btn{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:48px !important;
+    margin:0 !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    padding:11px 12px !important;
+  }
+
+  /* Contact section: ONE ROW on desktop */
+  .contact-section .contact-grid{
+    display:grid !important;
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:12px !important;
+    width:100% !important;
+    max-width:1100px !important;
+    margin:32px auto 0 !important;
+    align-items:stretch !important;
+  }
+
+  .contact-section .contact-grid .btn{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:52px !important;
+    margin:0 !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    padding:12px 14px !important;
+  }
+}
+
+/* Keep mobile/tablet behavior separate from desktop */
+@media (max-width:899px){
+  .hero-grid .portrait-tag{
+    display:none !important;
+  }
+}
+</style>
+
+<style id="summary-justify-consistent">
+/* Justification is intentionally desktop-only — see the scoped
+   #desktop-profile-justification rule (@media min-width:900px) further
+   up. A previous version of this block force-justified the summary at
+   every width with !important, which fought the mobile "left align"
+   patch and produced gappy, hard-to-read text on phones. Removed. */
+</style>
+
+<style id="print-resume">
+@media print{
+  @page{ margin:14mm 12mm; }
+
+  *{ animation:none !important; transition:none !important; box-shadow:none !important; text-shadow:none !important; }
+
+  html, body{ background:#fff !important; }
+  body{ color:#20262f !important; }
+  body::before, body::after{ display:none !important; }
+  main{ position:static !important; }
+
+  /* Hide anything decorative, interactive, or navigation-only */
+  .statusbar, .progress, .to-top, .print-fab, #print-resume-btn,
+  .hdr-scan, .face-scan, .signal-bars, .status-live .dot, .hud-tag .dot,
+  .dot, .hs-corner, .hs-line, .hs-check, .cursor, .idx, .hud-tag{
+    display:none !important;
+  }
+
+  a{ color:#20262f !important; text-decoration:none !important; }
+  a.btn[href^="mailto:"]::after,
+  a.btn[href^="tel:"]::after,
+  a.btn[href^="https://www.linkedin"]::after{
+    content:"" !important;
+  }
+
+  h1.name{
+    background:none !important; -webkit-text-fill-color:#0A0E14 !important;
+    color:#0A0E14 !important; filter:none !important; font-size:2.1rem !important;
+  }
+  h1, h2, h3{ color:#0A0E14 !important; }
+  .role-line, .role-line b{ color:#3a4250 !important; }
+  .summary{ color:#2b323d !important; text-align:justify !important; hyphens:auto !important; }
+  .eyebrow{ color:#555 !important; }
+  .section-kicker, .hud-tag{ color:#555 !important; }
+
+  section{ padding:16px 0 !important; border:none !important; }
+  section:not(.contact-section){ padding-top:20px !important; padding-bottom:20px !important; }
+  .wrap{ padding:0 !important; max-width:100% !important; width:100% !important; }
+  .hero{ padding:0 0 16px !important; }
+
+  .hero-grid{ display:grid !important; grid-template-columns:1fr 110px !important; gap:20px !important; text-align:left !important; }
+  .hero-grid > div:first-child{ order:1 !important; }
+  .portrait-frame{ order:2 !important; width:100px !important; height:110px !important; }
+  .cta-row{ justify-content:flex-start !important; }
+
+  .feed, .array-cat, .cred-card, .panel-box{
+    background:#fff !important; border:1px solid #d5d5d5 !important;
+    break-inside:avoid; page-break-inside:avoid;
+  }
+  .wall{ grid-template-columns:1fr 1fr !important; gap:12px !important; }
+  .array-grid{ grid-template-columns:1fr 1fr !important; gap:16px 24px !important; }
+
+  .chips li{ border:1px solid #ccc !important; background:#f6f6f6 !important; color:#20262f !important; }
+  .skill-track{ background:#e7e7e7 !important; }
+  .skill-fill{ background:#333 !important; box-shadow:none !important; }
+  .skill-fill::after{ display:none !important; }
+  .skill-name{ color:#20262f !important; }
+  .skill-level{ color:#555 !important; }
+  .skill-level.lv-expert, .skill-level.lv-advanced{ color:#333 !important; }
+  .cred-status{ color:#333 !important; }
+
+  .feed-role{ color:#0A0E14 !important; }
+  .feed-org{ color:#3a4250 !important; }
+  .feed-loc{ color:#666 !important; }
+  .feed-list li, .flagged li{ color:#2b323d !important; }
+  .li-ic, .flag-badge{ color:#333 !important; }
+  .flag-badge{ background:#333 !important; box-shadow:none !important; }
+  .flagged-label{ color:#333 !important; border-color:#999 !important; background:#f0f0f0 !important; }
+
+  .readout{ border:none !important; }
+  .readout .num{ color:#0A0E14 !important; }
+  .readout .lbl{ color:#555 !important; }
+
+  .contact-grid{ justify-content:flex-start !important; }
+  .contact-grid .btn{ border:1px solid #999 !important; color:#20262f !important; background:#fff !important; }
+  .btn.primary{ background:#eee !important; color:#20262f !important; }
+  .btn-ic{ color:#20262f !important; }
+  .btn.primary .btn-ic{ color:#20262f !important; }
+
+  .edu-item .deg, .panel-box h3{ color:#0A0E14 !important; }
+  .edu-item .inst, .edu-item .yrs{ color:#555 !important; }
+  .lang-row span:first-child{ color:#20262f !important; }
+  .lang-row span:last-child{ color:#555 !important; }
+  .traits li{ color:#2b323d !important; }
+
+  footer{ color:#777 !important; }
+  footer .rule{ background:#ccc !important; }
+
+  section{ page-break-inside:avoid; }
+}
+</style>
+
+<style id="makeover-photo-print-and-contact">
+/* ============================================================
+   MAKEOVER — creative export control anchored to the portrait,
+   a properly centered "Let's talk" close panel, and print/PDF
+   export fixes (blanket page-break-inside was forcing whole
+   sections onto single pages, leaving blank gaps in the PDF).
+   ============================================================ */
+
+/* ---------- Photo-anchored "Export Dossier" control ---------- */
+.hero-grid .portrait-frame{
+  margin-bottom:78px !important; /* reserves clear room for the tag below, so it never overlaps following content */
+  overflow:visible !important; /* a narrow-viewport safety rule elsewhere clips overflow on .portrait-frame, which was hiding the export tag */
+}
+@media (max-width:720px){
+  .hero-grid .portrait-frame{ margin-bottom:70px !important; overflow:visible !important; }
+}
+@media (max-width:899px){
+  .hero-grid .portrait-frame{ overflow:visible !important; }
+}
+@media (max-width:899px) and (min-width:721px){
+  /* Pre-existing gap: .hero-grid switches to display:block here, and a
+     generic ".hero-grid > div{ width:100% }" rule was stretching the
+     photo to the full column width. Restore its intended size. */
+  .hero-grid .portrait-frame{
+    width:190px !important; height:206px !important;
+    margin-left:auto !important; margin-right:auto !important;
+  }
+}
+
+.photo-print-btn{
+  position:absolute; left:50%; top:100%; transform:translateX(-50%);
+  margin-top:16px; z-index:5;
+  display:flex; flex-direction:column; align-items:center;
+  background:none; border:none; padding:0; margin-left:auto; margin-right:auto;
+  cursor:pointer; font-family:inherit; color:inherit;
+}
+.photo-print-btn__feed{
+  width:1px; height:14px;
+  background:repeating-linear-gradient(180deg, var(--gold-dim) 0 3px, transparent 3px 6px);
+  transition:background .2s ease;
+}
+.photo-print-btn__body{
+  display:inline-flex; align-items:center; gap:7px;
+  padding:8px 14px 8px 11px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:var(--panel-raised);
+  box-shadow:0 10px 26px rgba(0,0,0,0.30);
+  position:relative; overflow:hidden;
+  transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.photo-print-btn__body::before{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(100deg, transparent 30%, rgba(79,189,175,0.20) 48%, transparent 66%);
+  transform:translateX(-130%);
+  transition:transform .6s ease;
+  pointer-events:none;
+}
+.photo-print-btn:hover .photo-print-btn__body::before,
+.photo-print-btn:focus-visible .photo-print-btn__body::before{ transform:translateX(130%); }
+.photo-print-btn:hover .photo-print-btn__body,
+.photo-print-btn:focus-visible .photo-print-btn__body{
+  border-color:var(--teal);
+  transform:translateY(-2px);
+  box-shadow:0 14px 32px rgba(0,0,0,0.36);
+}
+.photo-print-btn:hover .photo-print-btn__feed,
+.photo-print-btn:focus-visible .photo-print-btn__feed{
+  background:repeating-linear-gradient(180deg, var(--teal) 0 3px, transparent 3px 6px);
+}
+.photo-print-btn__ic{ width:14px; height:14px; color:var(--teal); flex:none; }
+.photo-print-btn__label{
+  font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.05em;
+  color:var(--text); white-space:nowrap;
+}
+.photo-print-btn__tag{
+  font-family:'IBM Plex Mono',monospace; font-size:8.5px; letter-spacing:0.09em;
+  color:var(--gold); border:1px solid var(--gold-dim); border-radius:20px;
+  padding:1px 6px; line-height:1.5;
+}
+
+/* ---------- "Let's talk" close panel: real centering + theme framing ---------- */
+.contact-section .section-kicker{
+  display:inline-flex !important; align-items:center; gap:8px;
+  justify-content:center; width:100%;
+}
+.contact-section .section-kicker .dot{ width:6px; height:6px; }
+
+.contact-section h2,
+.contact-section > .wrap > p:not(.section-kicker){
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+
+.signal-panel{
+  position:relative;
+  margin:34px auto 0;
+  padding:30px 24px 26px;
+  max-width:900px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.014), transparent 60%);
+}
+.signal-panel::before, .signal-panel::after{
+  content:""; position:absolute; width:16px; height:16px; pointer-events:none;
+}
+.signal-panel::before{ top:-1px; left:-1px; border-top:2px solid var(--teal); border-left:2px solid var(--teal); border-top-left-radius:6px; }
+.signal-panel::after{ bottom:-1px; right:-1px; border-bottom:2px solid var(--gold); border-right:2px solid var(--gold); border-bottom-right-radius:6px; }
+
+.signal-panel .contact-grid{
+  margin-top:0 !important;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  width:auto !important;
+  grid-template-columns:none !important;
+}
+.signal-panel .contact-grid .btn{
+  width:auto !important;
+  flex:0 1 auto !important;
+  min-height:0 !important;
+  white-space:nowrap !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+}
+@media (max-width:640px){
+  .signal-panel .contact-grid .btn{
+    width:100% !important;
+    flex:1 1 100% !important;
+    white-space:normal !important;
+  }
+}
+
+.signal-panel__status{
+  margin:22px 0 0; text-align:center;
+  font-size:10px; letter-spacing:0.12em; color:var(--muted-dim);
+}
+
+@media (max-width:560px){
+  .signal-panel{ padding:24px 16px 22px; }
+}
+
+/* ---------- Print / PDF export fixes ---------- */
+@media print{
+  html, body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* Letting sections break naturally between cards (instead of forcing
+     an entire, often page-tall, section to stay intact) is what was
+     leaving large blank gaps and orphaned pages in the exported PDF. */
+  section{ page-break-inside:auto !important; break-inside:auto !important; }
+  .feed, .array-cat, .cred-card, .panel-box, .signal-panel{
+    break-inside:avoid !important; page-break-inside:avoid !important;
+  }
+
+  .photo-print-btn, .hero-wave, .signal-panel::before, .signal-panel::after{
+    display:none !important;
+  }
+  .signal-panel{ border:1px solid #ccc !important; background:none !important; padding:18px !important; }
+  .signal-panel__status{ color:#666 !important; }
+  .hero-grid .portrait-frame{ margin-bottom:0 !important; }
+}
+</style>
+
+
+<style id="sticky-navbar-final-fix">
+  /* Keep the navigation permanently pinned to the viewport. */
+  .statusbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    overflow: visible !important;
+  }
+  main {
+    padding-top: 54px;
+  }
+  @media (max-width: 640px) {
+    main { padding-top: 54px; }
+    .statusbar nav { z-index: 10000; }
+  }
+</style>
+
+<style id="premium-ui-overrides">
+/* ===== Premium recruiter-first UI layer ===== */
+:root{
+  --nav-h:64px;
+  --shadow-premium:0 24px 70px rgba(0,0,0,.24);
+  --glass:rgba(9,15,23,.82);
+}
+
+/* Hard-fix the navigation: fixed rather than sticky so no ancestor can
+   interfere with viewport positioning. */
+.statusbar{
+  position:fixed !important;
+  inset:0 0 auto 0 !important;
+  width:100% !important;
+  height:var(--nav-h) !important;
+  z-index:10000 !important;
+  overflow:visible !important;
+  background:rgba(7,12,19,.88) !important;
+  border-bottom:1px solid rgba(99,214,202,.14) !important;
+  box-shadow:0 10px 34px rgba(0,0,0,.18);
+  backdrop-filter:blur(18px) saturate(130%);
+  -webkit-backdrop-filter:blur(18px) saturate(130%);
+}
+.statusbar-inner{
+  min-height:var(--nav-h) !important;
+  height:var(--nav-h) !important;
+  max-width:1160px !important;
+  padding:0 20px !important;
+}
+.status-live{
+  font-size:10px !important;
+  letter-spacing:.12em !important;
+}
+.status-live-text{color:#cbd5e1;}
+.statusbar nav{gap:6px !important; align-items:center;}
+.statusbar nav a{
+  border:1px solid transparent;
+  border-radius:8px;
+  padding:8px 10px !important;
+  font-size:11px;
+  letter-spacing:.06em !important;
+}
+.statusbar nav a.active{
+  background:rgba(99,214,202,.08);
+  border-color:rgba(99,214,202,.18);
+}
+
+/* Prevent the fixed bar from covering the hero and anchor targets. */
+main{padding-top:var(--nav-h) !important;}
+section{scroll-margin-top:calc(var(--nav-h) + 18px) !important;}
+.hero{padding-top:clamp(58px,8vw,92px) !important;}
+
+/* Stronger hero hierarchy. */
+.hero-grid{align-items:center !important;}
+.eyebrow{opacity:.9;}
+h1.name{
+  text-wrap:balance;
+  max-width:900px;
+}
+.role-line{
+  color:#e8edf4 !important;
+  font-weight:500;
+}
+.summary{
+  max-width:850px !important;
+  font-size:1rem !important;
+  line-height:1.78 !important;
+}
+
+/* Add a subtle recruiter-facing label to the CTA group. */
+.cta-row{
+  position:relative;
+  padding-top:18px;
+  border-top:1px solid rgba(150,170,190,.10);
+}
+.cta-row::before{
+  content:"DIRECT CONTACT";
+  position:absolute;
+  left:0;
+  top:0;
+  transform:translateY(-50%);
+  padding-right:10px;
+  background:var(--void);
+  font:600 9px/1 'IBM Plex Mono',monospace;
+  letter-spacing:.14em;
+  color:var(--teal);
+}
+.cta-row .btn.primary{
+  box-shadow:0 8px 26px rgba(201,162,74,.12);
+}
+
+/* Stats become a premium proof strip. */
+.readout{
+  box-shadow:var(--shadow-premium);
+  background:rgba(8,14,21,.78) !important;
+}
+.readout div{
+  min-height:92px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.readout .num{font-size:1.65rem !important;}
+
+/* Section headings: cleaner, less decorative, more executive. */
+.section-kicker{
+  letter-spacing:.18em !important;
+  font-weight:600;
+}
+.section-head{
+  background:linear-gradient(180deg,rgba(16,24,34,.64),rgba(10,16,24,.42));
+  border:1px solid rgba(150,170,190,.10);
+  border-radius:16px;
+  padding:22px 24px !important;
+  box-shadow:0 12px 38px rgba(0,0,0,.10);
+}
+.section-head .head-text{align-items:flex-start !important;}
+.section-head h2{text-wrap:balance;}
+.section-head .idx{margin-left:auto;}
+
+/* Cards: more whitespace and better scanning. */
+.feed,.array-cat,.cred-card,.panel-box{
+  box-shadow:0 16px 45px rgba(0,0,0,.14) !important;
+}
+.feed-body{padding:24px !important;}
+.feed-list li{margin-bottom:10px;}
+.flagged{margin-top:22px !important;}
+.array-cat{padding:24px !important;}
+.cred-card{padding:22px !important;}
+.panel-box{padding:24px !important;}
+
+/* Make skill bars feel like evidence rather than decoration. */
+.skill-row{margin-bottom:15px !important;}
+.skill-top{margin-bottom:7px !important;}
+.skill-track{height:7px !important;}
+
+/* Contact section gets a decisive closing CTA. */
+.contact-section{
+  padding-top:100px !important;
+  padding-bottom:86px !important;
+}
+.contact-section h2{
+  max-width:850px;
+  text-wrap:balance;
+}
+.signal-panel{
+  margin-top:28px;
+  padding:22px;
+  border:1px solid rgba(99,214,202,.14);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(18,29,39,.82),rgba(9,15,23,.76));
+  box-shadow:var(--shadow-premium);
+}
+
+/* Mobile */
+@media (max-width:640px){
+  :root{--nav-h:58px;}
+  .statusbar-inner{padding:0 14px !important;}
+  .status-live{max-width:calc(100% - 50px) !important;}
+  .nav-toggle{display:flex !important;}
+  .statusbar nav{
+    position:absolute !important;
+    top:100% !important;
+    left:10px !important;
+    right:10px !important;
+    width:auto !important;
+    background:rgba(9,15,23,.97) !important;
+    border:1px solid rgba(99,214,202,.16) !important;
+    border-radius:0 0 12px 12px;
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+  }
+  .statusbar nav a{
+    padding:13px 18px !important;
+    border-radius:0 !important;
+  }
+  .hero{padding-top:52px !important;}
+  .section-head{padding:18px 16px !important;}
+  .section-head .idx{display:none;}
+  .readout{margin-top:28px !important;}
+  .cta-row{gap:8px !important;}
+  .cta-row .btn{flex:1 1 100%;}
+  .cta-row::before{left:0;}
+}
+
+/* Reduced motion/accessibility */
+@media (prefers-reduced-motion:reduce){
+  .statusbar{backdrop-filter:none;-webkit-backdrop-filter:none;}
+}
+</style>
+
+
+<style id="hero-proof-style">
+.hero-proof{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:18px 0 0;
+}
+.hero-proof span{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:5px 9px;
+  border:1px solid rgba(99,214,202,.14);
+  border-radius:999px;
+  background:rgba(99,214,202,.045);
+  color:#b9c8d6;
+  font:600 9px/1.1 'IBM Plex Mono',monospace;
+  letter-spacing:.08em;
+}
+</style>
+
+
+<style id="premium-a4-print">
+@media print {
+  @page { size: A4 portrait; margin: 10mm 11mm 12mm; }
+  html { background:#eef1f4 !important; }
+  body {
+    background:#fff !important; color:#20262f !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size:10pt !important; line-height:1.42 !important;
+    -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important;
+  }
+  body::before {
+    content:"" !important; display:block !important; position:fixed !important;
+    inset:0 !important; border:1px solid #d9dee5 !important;
+    pointer-events:none !important; z-index:99999 !important;
+  }
+  .hero {
+    padding: 4mm 0 5mm !important;
+    border-bottom:2px solid #1f8f86 !important;
+    margin-bottom:3mm !important;
+  }
+  .hero-grid {
+    grid-template-columns:minmax(0,1fr) 30mm !important;
+    gap:7mm !important; align-items:center !important;
+  }
+  .portrait-frame { width:27mm !important; height:30mm !important; border-radius:4mm !important; }
+  h1.name { font-size:28pt !important; letter-spacing:-.04em !important; margin:0 0 2mm !important; }
+  .role-line { font-size:11pt !important; line-height:1.45 !important; }
+  .summary { font-size:9.5pt !important; line-height:1.5 !important; margin-top:2mm !important; }
+  .eyebrow { font-size:7.5pt !important; letter-spacing:.16em !important; margin-bottom:2mm !important; }
+  .cta-row, .photo-print-btn, .print-fab, .to-top, .statusbar, .progress, footer .social, .cursor, .signal-panel { display:none !important; }
+
+  section { padding:4mm 0 !important; margin:0 !important; border-bottom:1px solid #e2e6eb !important; break-inside:auto !important; page-break-inside:auto !important; }
+  section:not(.contact-section) { padding-top:4mm !important; padding-bottom:4mm !important; }
+  .section-head { margin-bottom:3mm !important; display:flex !important; align-items:end !important; justify-content:space-between !important; }
+  .section-head h2 { font-size:15pt !important; margin:0 !important; }
+  .section-kicker { font-size:7pt !important; letter-spacing:.14em !important; }
+  .section-head::after { content:""; height:2px; flex:1; margin:0 0 2mm 5mm; background:#d8dee5; }
+
+  .wall, .array, .array-grid { gap:3mm !important; }
+  .wall { grid-template-columns:1fr 1fr !important; }
+  .array { grid-template-columns:repeat(3,1fr) !important; }
+  .array-grid { grid-template-columns:1fr 1fr !important; }
+  .feed, .array-cat, .cred-card, .panel-box {
+    background:#fff !important; border:1px solid #dfe4e9 !important;
+    border-radius:2.5mm !important; padding:0 !important;
+    box-shadow:none !important; break-inside:avoid !important; page-break-inside:avoid !important;
+  }
+  .feed-body, .array-cat, .panel-box, .cred-card { padding:3.2mm !important; }
+  .feed-role { font-size:10.5pt !important; }
+  .feed-org { font-size:8.5pt !important; }
+  .feed-list, .flagged { font-size:8.3pt !important; }
+  .feed-list li { line-height:1.4 !important; margin-bottom:1mm !important; }
+  .flagged { padding:2.5mm !important; margin-top:2mm !important; background:#f7f8fa !important; border-color:#dfe4e9 !important; }
+  .chips li { font-size:7.5pt !important; padding:1.5mm 2mm !important; background:#f4f6f8 !important; border:1px solid #dfe4e9 !important; color:#26303a !important; }
+  .readout .num { font-size:18pt !important; }
+  .readout .lbl { font-size:7pt !important; }
+  .contact-section { padding:5mm 0 !important; background:#f7f9fa !important; border:1px solid #dfe4e9 !important; }
+  .contact-section h2 { font-size:18pt !important; }
+  .contact-grid .btn { font-size:8pt !important; padding:2mm 3mm !important; border:1px solid #cfd6dd !important; background:#fff !important; color:#20262f !important; }
+  footer { padding:4mm 0 0 !important; font-size:7pt !important; }
+  footer .rule { background:#d8dee5 !important; }
+  a { color:#20262f !important; text-decoration:none !important; }
+  .skill-track { background:#e7eaee !important; height:3px !important; }
+  .skill-fill { background:#238f86 !important; }
+  .cred-status { color:#238f86 !important; }
+}
+</style>
+
+
+<style id="security-control-room-print-theme">
+/* =========================================================
+   SECURITY CONTROL ROOM + SERVER ROOM PRINT THEME
+   Clean A4 paper — no black-page background
+   ========================================================= */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 10mm 11mm;
+  }
+
+  html, body {
+    background: #f4f7f8 !important;
+    color: #18232b !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif !important;
+    min-height: auto !important;
+  }
+
+  /* Paper itself */
+  main {
+    width: 100% !important;
+    max-width: 190mm !important;
+    margin: 0 auto !important;
+    background: #fff !important;
+    border: 1px solid #d7e0e3 !important;
+    box-shadow: 0 0 0 4px #edf2f3 !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* Subtle control-room / server-room atmosphere */
+  main::before {
+    content: "SECURITY OPERATIONS  //  VIDEO SURVEILLANCE  //  INFRASTRUCTURE";
+    display: block !important;
+    height: 7mm !important;
+    padding: 2mm 7mm 0 !important;
+    box-sizing: border-box !important;
+    background:
+      linear-gradient(90deg, #0c5960 0 18%, #18343d 18% 100%) !important;
+    color: #d8f1ef !important;
+    font: 600 6.5px/1.2 "IBM Plex Mono", monospace !important;
+    letter-spacing: .14em !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  /* Remove black/dark web backgrounds everywhere */
+  header, .hero, section, footer,
+  .panel, .panel-box, .feed, .array-cat, .cred-card,
+  .signal-panel, .readout, .card, .skill-card {
+    background: #fff !important;
+    color: #18232b !important;
+  }
+
+  .hero {
+    padding: 8mm 7mm 5mm !important;
+    border-bottom: 1px solid #d6e1e4 !important;
+    position: relative !important;
+  }
+
+  .hero::after {
+    content: "●  SYSTEM STATUS: OPERATIONAL     ◼  VMS / NVR     ◼  ALARM     ◼  NETWORK";
+    display: block !important;
+    margin-top: 5mm !important;
+    padding: 2.2mm 3mm !important;
+    border: 1px solid #cfe0e3 !important;
+    background: #f2f8f8 !important;
+    color: #27636a !important;
+    font: 600 6.5px/1.2 "IBM Plex Mono", monospace !important;
+    letter-spacing: .08em !important;
+  }
+
+  h1.name {
+    color: #0d2027 !important;
+    -webkit-text-fill-color: #0d2027 !important;
+    font-size: 27px !important;
+    letter-spacing: -.045em !important;
+  }
+
+  .role-line {
+    color: #28666d !important;
+    font-weight: 700 !important;
+  }
+
+  .summary, .feed-list li, .traits li {
+    color: #34434a !important;
+  }
+
+  /* Section headings styled like security control panels */
+  .section-head {
+    margin-bottom: 4mm !important;
+    padding: 2.5mm 3mm !important;
+    border-left: 3px solid #0d6970 !important;
+    border-bottom: 1px solid #d8e2e5 !important;
+    background:
+      linear-gradient(90deg, #eef7f7, #fff) !important;
+  }
+
+  .section-head h2 {
+    color: #10252d !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    letter-spacing: -.015em !important;
+  }
+
+  .section-kicker {
+    color: #688087 !important;
+    font-family: "IBM Plex Mono", monospace !important;
+    font-size: 6.5px !important;
+    letter-spacing: .15em !important;
+  }
+
+  section {
+    padding: 5mm 7mm !important;
+    border: 0 !important;
+    break-inside: auto !important;
+  }
+
+  /* Cards: rack/server-module appearance */
+  .feed, .array-cat, .cred-card, .panel-box, .signal-panel {
+    border: 1px solid #cfdadd !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+    position: relative !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .feed::before, .array-cat::before, .cred-card::before, .panel-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #0c6970 !important;
+  }
+
+  .feed-body, .array-cat, .cred-card, .panel-box {
+    background: linear-gradient(135deg, #fff 0%, #fbfcfc 100%) !important;
+  }
+
+  /* Tiny rack screws / status detail */
+  .feed::after, .panel-box::after {
+    content: "●";
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    color: #3d9291 !important;
+    font-size: 7px !important;
+  }
+
+  .feed-role, .edu-item .deg, .panel-box h3 {
+    color: #142b33 !important;
+  }
+
+  .feed-org, .feed-loc, .edu-item .inst, .edu-item .yrs {
+    color: #607178 !important;
+  }
+
+  /* Skills as equipment labels */
+  .chips li {
+    border: 1px solid #c9d9dc !important;
+    background: #f3f7f8 !important;
+    color: #26464e !important;
+    border-radius: 2px !important;
+    font-size: 7.5px !important;
+  }
+
+  .skill-track {
+    background: #e6edef !important;
+  }
+
+  .skill-fill {
+    background: #176c72 !important;
+  }
+
+  /* Readouts */
+  .readout {
+    border: 1px solid #d1dee1 !important;
+    background: #f8fafb !important;
+  }
+
+  .readout .num {
+    color: #0c5860 !important;
+  }
+
+  .readout .lbl {
+    color: #63747a !important;
+  }
+
+  /* Contact/footer */
+  .contact-section {
+    background: #f1f6f7 !important;
+    border-top: 2px solid #0d6970 !important;
+  }
+
+  .contact-grid .btn {
+    border: 1px solid #9db5b9 !important;
+    background: #fff !important;
+    color: #18343c !important;
+  }
+
+  .btn.primary {
+    background: #0d6067 !important;
+    color: #fff !important;
+    border-color: #0d6067 !important;
+  }
+
+  footer {
+    background: #18343d !important;
+    color: #d8e8ea !important;
+    border-top: 4px solid #0c6970 !important;
+  }
+
+  footer .rule {
+    background: #4d6870 !important;
+  }
+
+  /* Print-friendly photo frame */
+  .portrait-frame {
+    border: 1px solid #b8cdd1 !important;
+    box-shadow: none !important;
+    background: #edf3f4 !important;
+  }
+
+  /* Never allow decorative black web overlays onto paper */
+  .hero::before, body::before, body::after,
+  .hdr-scan, .face-scan, .signal-bars,
+  .hud-tag, .hs-corner, .hs-line, .hs-check,
+  .cursor, .idx, .progress, .to-top, .print-fab,
+  .photo-print-btn, .hero-wave {
+    display: none !important;
+  }
+
+  a {
+    color: #185d64 !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Browser preview of print mode: paper-like, not black */
+@media screen {
+  body.print-preview,
+  body.print-preview main {
+    background: #f4f7f8 !important;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden;">
+  <defs>
+    <symbol id="ic-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.3"/>
+    </symbol>
+    <symbol id="ic-network" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="8" width="18" height="6.5" rx="1.2"/><path d="M7 14.5V18M12 14.5V18M17 14.5V18"/><path d="M6.6 11.2h.01M10.6 11.2h.01M14.6 11.2h.01M18.4 11.2h.01"/>
+    </symbol>
+    <symbol id="ic-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4.5" width="18" height="12" rx="1.4"/><path d="M8 20h8M12 16.5V20"/>
+    </symbol>
+    <symbol id="ic-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14.7 6.3a4 4 0 0 0-5.4 4.9L3.6 17.9l2.5 2.5 6.7-5.7a4 4 0 0 0 4.9-5.4l-2.6 2.6-2.4-2.4 2.7-2.6z"/>
+    </symbol>
+    <symbol id="ic-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="ic-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="10.5" width="14" height="9.5" rx="1.6"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/>
+    </symbol>
+    <symbol id="ic-fingerprint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4.2a7.3 7.3 0 0 1 7.3 7.3v1.3c0 1.7-.2 3.1-.7 4.4"/><path d="M12 4.2a7.3 7.3 0 0 0-7.3 7.3v1.3c0 3 .9 5.6 2.3 7.6"/><path d="M9.2 20.3A9.4 9.4 0 0 1 7.7 11.5a4.3 4.3 0 0 1 8.6 0v2"/><path d="M12 11.5v1.6c0 2.6.6 4.7 1.7 6.5"/><path d="M9.9 17.6a6.3 6.3 0 0 1-1-3.9v-2.2a3.1 3.1 0 0 1 6.2 0"/>
+    </symbol>
+    <symbol id="ic-alarm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3a5 5 0 0 0-5 5v3.3c0 1-.4 2-1.1 2.7L5 15.5h14l-.9-1.5c-.7-.7-1.1-1.7-1.1-2.7V8a5 5 0 0 0-5-5z"/><path d="M9.5 18a2.5 2.5 0 0 0 5 0"/>
+    </symbol>
+    <symbol id="ic-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12v6c0 1.66 3.13 3 7 3s7-1.34 7-3v-6"/>
+    </symbol>
+    <symbol id="ic-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="4" width="16" height="6" rx="1.2"/><rect x="4" y="14" width="16" height="6" rx="1.2"/><path d="M7.5 7h.01M7.5 17h.01"/>
+    </symbol>
+    <symbol id="ic-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="4.5" width="12" height="16" rx="1.6"/><rect x="9" y="3" width="6" height="3" rx="1"/><path d="M9 11h6M9 14.5h6M9 17.5h3.5"/>
+    </symbol>
+    <symbol id="ic-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3v18"/><path d="M6 4.5h11l-2.5 3.5L17 11.5H6"/>
+    </symbol>
+    <symbol id="ic-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r=".8" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="ic-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9.3" cy="8" r="3"/><path d="M3.5 20c0-3.6 2.6-6.2 5.8-6.2s5.8 2.6 5.8 6.2"/><circle cx="17" cy="9" r="2.3"/><path d="M15.3 14c2 .3 3.6 2.3 3.8 6"/>
+    </symbol>
+    <symbol id="ic-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 5.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9.5l-4.3 3.4v-3.4H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"/>
+    </symbol>
+    <symbol id="ic-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 16a8 8 0 0 1 16 0"/><path d="M12 16 L15.6 11.2"/><circle cx="12" cy="16" r="1.1" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 6.5l8 6.5 8-6.5"/>
+    </symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5.5 4h3l1.6 4.4-2 1.7a13.6 13.6 0 0 0 5.8 5.8l1.7-2 4.4 1.6v3a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 4 5.6 1.5 1.5 0 0 1 5.5 4z"/>
+    </symbol>
+    <symbol id="ic-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="2.5"/><path d="M8 10.5v6M8 7.7v.03"/><path d="M12 16.5v-3.7c0-1.3.9-2.3 2.2-2.3s2.1 1 2.1 2.3v3.7"/>
+    </symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/>
+    </symbol>
+    <symbol id="ic-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4v11"/><path d="M7.5 11.5 12 16l4.5-4.5"/><path d="M5 19.5h14"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="scroll-progress" aria-hidden="true"></div>
+
+<div class="statusbar">
+  <div class="statusbar-inner">
+    <span class="status-live"><span class="dot" aria-hidden="true"></span><span class="status-live-text">OPEN TO SENIOR ENGAGEMENTS · DUBAI, UAE</span></span>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span></span></button>
+    <nav aria-label="Section navigation" id="site-nav">
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Skills</a>
+      <a href="#brands">Technology</a>
+      <a href="#credentials">Licenses</a>
+      <a href="#education">Profile</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">SECURITY SYSTEMS ENGINEER <span class="sep">/</span> CCTV &amp; ELV <span class="sep">/</span> DUBAI, UAE<span class="cursor" aria-hidden="true"></span></p>
+        <h1 class="name">Nagoor Meeran</h1>
+        <p class="role-line">CCTV &amp; VMS · Intruder Alarm · Access Control · <b>Biometric Systems</b> — SIRA&nbsp;Licensed</p>
+        <div class="hero-proof" aria-label="Core focus">
+          <span>CCTV &amp; VMS</span><span>INTRUDER ALARM</span><span>ACCESS CONTROL</span><span>BIOMETRICS</span><span>SIRA COMPLIANCE</span>
+        </div>
+        <p class="summary">SIRA-licensed Security Systems Engineer with 10+ years across CCTV, VMS, access control, intruder alarm and biometric systems. Hands-on experience spanning system design, installation, commissioning, preventive maintenance, fault diagnosis, NVR/VMS integration and network configuration. Delivered large-scale deployments of 400+ cameras per site and supported environments targeting 99% system uptime. Combines ELV field expertise with IT support, database operations, vendor coordination, client handover and SIRA compliance. Based in Dubai and available for senior ELV, CCTV and security systems engineering opportunities.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:vemeeran@gmail.com">Email Me</a>
+          <a class="btn" href="tel:+971504260038">+971 50 426 0038</a>
+          <a class="btn" href="https://www.linkedin.com/in/vemeeran" target="_blank" rel="noopener">LinkedIn Profile</a>
+          <a class="btn" id="vcard-btn" href="#" download="nagoor-meeran.vcf">Save Contact (.vcf)</a>
+        </div>
+      </div>
+      <div class="portrait-frame">
+        <img src="data:image/jpeg;base64,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" alt="Portrait of Nagoor Meeran">
+        <span class="portrait-tag"></span>
+        <button type="button" class="photo-print-btn" id="print-photo-btn" aria-label="Download résumé as PDF" title="Download résumé as PDF">
+          <span class="photo-print-btn__feed" aria-hidden="true"></span>
+          <span class="photo-print-btn__body">
+            <svg class="photo-print-btn__ic" aria-hidden="true"><use href="#ic-download"/></svg>
+            <span class="photo-print-btn__label">Export Dossier</span>
+            <span class="photo-print-btn__tag mono">PDF</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1600 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 L60,50 L72,26 L84,72 L96,50 L150,50 L164,14 L176,86 L190,50 L230,50 L244,38 L256,62 L270,50 L320,50 L334,20 L346,80 L360,50 L410,50 L424,10 L434,90 L448,50 L490,50 L504,42 L516,58 L530,50 L580,50 L594,24 L606,76 L620,50 L670,50 L684,16 L694,84 L708,50 L750,50 L764,50 L778,8 L788,92 L800,50 L800,50 L860,50 L872,26 L884,72 L896,50 L950,50 L964,14 L976,86 L990,50 L1030,50 L1044,38 L1056,62 L1070,50 L1120,50 L1134,20 L1146,80 L1160,50 L1210,50 L1224,10 L1234,90 L1248,50 L1290,50 L1304,42 L1316,58 L1330,50 L1380,50 L1394,24 L1406,76 L1420,50 L1470,50 L1484,16 L1494,84 L1508,50 L1550,50 L1564,50 L1578,8 L1588,92 L1600,50"
+          fill="none" stroke="url(#waveGrad)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#4FBDAF"/>
+            <stop offset="50%" stop-color="#C9A24A"/>
+            <stop offset="100%" stop-color="#4FBDAF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="wrap">
+      <div class="readout">
+        <div><div class="num" data-count="10" data-suffix="+">0</div><div class="lbl">Years Experience</div></div>
+        <div><div class="num c-teal" data-count="400" data-suffix="+">0</div><div class="lbl">Cameras / Site</div></div>
+        <div><div class="num c-teal" data-count="99" data-suffix="%">0</div><div class="lbl">System Uptime</div></div>
+        <div><div class="num" data-count="16" data-suffix="">0</div><div class="lbl">Branch Sites</div></div>
+        <div><div class="num" data-count="3" data-suffix="">0</div><div class="lbl">Countries Deployed</div></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="experience" data-index="01">
+    <div class="wrap">
+      <p class="section-kicker">Professional Track Record</p>
+      <div class="section-head reveal">
+        <div class="face-scan" aria-hidden="true">
+          <svg class="fw-svg" viewBox="0 0 40 44">
+            <circle class="fw-head" cx="20.0" cy="3.5" r="0.55"/>
+            <circle class="fw-head" cx="24.0" cy="4.5" r="0.55"/>
+            <circle class="fw-head" cx="27.4" cy="7.2" r="0.55"/>
+            <circle class="fw-head" cx="29.7" cy="11.2" r="0.55"/>
+            <circle class="fw-head" cx="30.5" cy="16.0" r="0.55"/>
+            <circle class="fw-head" cx="29.7" cy="20.8" r="0.55"/>
+            <circle class="fw-head" cx="27.4" cy="24.8" r="0.55"/>
+            <circle class="fw-head" cx="24.0" cy="27.5" r="0.55"/>
+            <circle class="fw-head" cx="20.0" cy="28.5" r="0.55"/>
+            <circle class="fw-head" cx="16.0" cy="27.5" r="0.55"/>
+            <circle class="fw-head" cx="12.6" cy="24.8" r="0.55"/>
+            <circle class="fw-head" cx="10.3" cy="20.8" r="0.55"/>
+            <circle class="fw-head" cx="9.5" cy="16.0" r="0.55"/>
+            <circle class="fw-head" cx="10.3" cy="11.2" r="0.55"/>
+            <circle class="fw-head" cx="12.6" cy="7.2" r="0.55"/>
+            <circle class="fw-head" cx="16.0" cy="4.5" r="0.55"/>
+            <circle class="fw-should" cx="4" cy="30" r="0.55"/>
+            <circle class="fw-should" cx="6.7" cy="32.3" r="0.55"/>
+            <circle class="fw-should" cx="9.3" cy="34.3" r="0.55"/>
+            <circle class="fw-should" cx="12" cy="36" r="0.55"/>
+            <circle class="fw-should" cx="14.4" cy="37.4" r="0.55"/>
+            <circle class="fw-should" cx="17" cy="38.4" r="0.55"/>
+            <circle class="fw-should" cx="20" cy="39" r="0.55"/>
+            <circle class="fw-should" cx="23" cy="38.4" r="0.55"/>
+            <circle class="fw-should" cx="25.6" cy="37.4" r="0.55"/>
+            <circle class="fw-should" cx="28" cy="36" r="0.55"/>
+            <circle class="fw-should" cx="30.7" cy="34.3" r="0.55"/>
+            <circle class="fw-should" cx="33.3" cy="32.3" r="0.55"/>
+            <circle class="fw-should" cx="36" cy="30" r="0.55"/>
+            <circle class="fw-feat" cx="16.3" cy="14.5" r="0.6"/>
+            <circle class="fw-feat" cx="23.7" cy="14.5" r="0.6"/>
+            <circle class="fw-feat" cx="20" cy="19.5" r="0.6"/>
+          </svg>
+          <span class="fs-corner tl"></span>
+          <span class="fs-corner tr"></span>
+          <span class="fs-corner bl"></span>
+          <span class="fs-corner br"></span>
+          <span class="fs-line"></span>
+          <span class="fs-check"><svg viewBox="0 0 24 24" fill="none" stroke="#4FBDAF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        </div>
+        <div class="head-text">
+          <span class="hud-tag"><span class="dot" aria-hidden="true"></span>CAM GRID · ALL FEEDS NOMINAL<span class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span></span>
+          <h2>Experience & Impact</h2>
+        </div>
+        <span class="idx">04 FEEDS</span>
+      </div>
+
+      <div class="wall">
+
+        <article class="feed">
+          <div class="feed-head">
+            <span class="cam-id">CAM‑01</span>
+            <span class="rec"><span class="dot" aria-hidden="true"></span>RECORDING · NOV 2024–PRESENT</span>
+          </div>
+          <div class="feed-body">
+            <h3 class="feed-role">Security System Engineer</h3>
+            <p class="feed-org">Vostok Trading LLC</p>
+            <p class="feed-loc">DUBAI, UAE</p>
+            <ul class="feed-list">
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-camera"/></svg>Architect, install and maintain end-to-end CCTV, access control and intruder alarm systems across multiple live sites</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-network"/></svg>Configure network switches and NVRs for stable CCTV connectivity and seamless VMS integration</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-monitor"/></svg>Lead large-scale rollouts of 400+ cameras per site, unified under integrated VMS solutions</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-wrench"/></svg>Drive preventive maintenance and rapid troubleshooting that sustain 99% system uptime</li>
+              <li><svg class="li-ic c-gold" aria-hidden="true"><use href="#ic-shield"/></svg>Ensure SIRA compliance across every security project; coordinate vendors and contractors on ELV/IT infrastructure</li>
+            </ul>
+            <div class="flagged">
+              <div class="flagged-label"><svg class="label-ic" aria-hidden="true"><use href="#ic-flag"/></svg>Flagged Achievements</div>
+              <ul>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Deployed SIRA-compliant CCTV &amp; ELV solutions across UAE sites</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Improved incident response with centralized monitoring systems</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Delivered seamless project handovers and client training</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="feed">
+          <div class="feed-head">
+            <span class="cam-id">CAM‑02</span>
+            <span class="archived">ARCHIVED · MAY 2022–OCT 2024</span>
+          </div>
+          <div class="feed-body">
+            <h3 class="feed-role">IT Support &amp; Database Specialist</h3>
+            <p class="feed-org">Largstone Private Limited</p>
+            <p class="feed-loc">TAMIL NADU, INDIA</p>
+            <ul class="feed-list">
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-wrench"/></svg>Delivered desktop, application and remote troubleshooting support across departments, consistently within SLA</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-server"/></svg>Installed and maintained Windows systems, peripherals and office tooling fleet-wide</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-database"/></svg>Managed MySQL &amp; MongoDB databases end-to-end — optimization, backup/restore and performance monitoring</li>
+              <li><svg class="li-ic c-gold" aria-hidden="true"><use href="#ic-shield"/></svg>Supported software deployment and update cycles to keep systems compliant and efficient</li>
+            </ul>
+            <div class="flagged">
+              <div class="flagged-label"><svg class="label-ic" aria-hidden="true"><use href="#ic-flag"/></svg>Flagged Achievements</div>
+              <ul>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>95% first-response resolution rate on IT support tickets</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Reduced downtime 20% through preventive maintenance programs</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Boosted performance via optimized queries and proactive DB monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="feed">
+          <div class="feed-head">
+            <span class="cam-id">CAM‑03</span>
+            <span class="archived">ARCHIVED · OCT 2017–DEC 2021</span>
+          </div>
+          <div class="feed-body">
+            <h3 class="feed-role">Security System &amp; IT Support Technician</h3>
+            <p class="feed-org">Pustaka Rawang Sdn Bhd</p>
+            <p class="feed-loc">PUTRAJAYA, MALAYSIA</p>
+            <ul class="feed-list">
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-camera"/></svg>Managed CCTV networks and biometric attendance systems across a 16-branch footprint</li>
+              <li><svg class="li-ic c-gold" aria-hidden="true"><use href="#ic-lock"/></svg>Supported desktops, printers, CCTV and access control systems, on-site and remote</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-wrench"/></svg>Ran preventive maintenance programs that cut breakdowns and downtime</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-database"/></svg>Performed system backups and restorations to safeguard business continuity</li>
+            </ul>
+            <div class="flagged">
+              <div class="flagged-label"><svg class="label-ic" aria-hidden="true"><use href="#ic-flag"/></svg>Flagged Achievements</div>
+              <ul>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Centralized CCTV monitoring — 40% faster incident response</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Integrated biometric attendance with backend HR systems</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Streamlined multi-branch security operations</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="feed">
+          <div class="feed-head">
+            <span class="cam-id">CAM‑04</span>
+            <span class="archived">ARCHIVED · MAR 2014–DEC 2017</span>
+          </div>
+          <div class="feed-body">
+            <h3 class="feed-role">System Support Technician</h3>
+            <p class="feed-org">ART Group of Organization</p>
+            <p class="feed-loc">TAMIL NADU, INDIA</p>
+            <ul class="feed-list">
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-server"/></svg>Assembled and configured systems with Windows/Linux installs and core software</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-wrench"/></svg>Diagnosed and resolved hardware issues; set up and swapped peripherals with minimal disruption</li>
+              <li><svg class="li-ic" aria-hidden="true"><use href="#ic-network"/></svg>Performed network troubleshooting to keep connectivity stable across the floor</li>
+              <li><svg class="li-ic c-gold" aria-hidden="true"><use href="#ic-clipboard"/></svg>Maintained inventory for timely procurement and minimal downtime</li>
+            </ul>
+            <div class="flagged">
+              <div class="flagged-label"><svg class="label-ic" aria-hidden="true"><use href="#ic-flag"/></svg>Flagged Achievements</div>
+              <ul>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Improved system deployment speed by 20%</li>
+                <li><span class="flag-badge"><svg aria-hidden="true"><use href="#ic-flag"/></svg></span>Lifted satisfaction via tailored configs and efficient support</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise" data-index="02">
+    <div class="wrap">
+      <p class="section-kicker">Core Technical Capability</p>
+      <div class="section-head reveal">
+        <div class="hdr-scan" aria-hidden="true">
+          <svg class="hs-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-wrench"/></svg>
+          <span class="hs-corner tl"></span>
+          <span class="hs-corner tr"></span>
+          <span class="hs-corner bl"></span>
+          <span class="hs-corner br"></span>
+          <span class="hs-line"></span>
+          <span class="hs-check"><svg viewBox="0 0 24 24" fill="none" stroke="#4FBDAF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        </div>
+        <div class="head-text">
+          <span class="hud-tag"><span class="dot" aria-hidden="true"></span>SENSOR DIAGNOSTICS · ONLINE<span class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span></span>
+          <h2>Technical Capability</h2>
+        </div>
+        <span class="idx">4 GROUPS</span>
+      </div>
+
+      <div class="array-grid">
+        <div class="array-cat">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-camera"/></svg><h3>CCTV &amp; ELV Systems</h3></div>
+          <div class="skill-meters">
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">CCTV Installation &amp; Maintenance</span><span class="skill-level lv-expert">EXPERT</span></div><div class="skill-track"><div class="skill-fill" data-level="96"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Intruder Alarm Systems</span><span class="skill-level lv-expert">EXPERT</span></div><div class="skill-track"><div class="skill-fill" data-level="95"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Access Control &amp; Biometric Setup</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="92"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">VMS Integration &amp; Centralized Monitoring</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="90"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Security Compliance &amp; System Audits</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="88"></div></div></div>
+          </div>
+        </div>
+        <div class="array-cat">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-network"/></svg><h3>Networking &amp; IT Infrastructure</h3></div>
+          <div class="skill-meters">
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Peripheral Setup &amp; Maintenance</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="90"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Windows OS Install &amp; Configuration</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="88"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">LAN/WAN Setup &amp; Troubleshooting</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="86"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Network &amp; Switch Configuration</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Network Monitoring &amp; Optimization</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="84"></div></div></div>
+          </div>
+        </div>
+        <div class="array-cat">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-shield"/></svg><h3>Core Competencies</h3></div>
+          <div class="skill-meters">
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Preventive Maintenance</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="93"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Multi-Site Operations</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="91"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Incident Management</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="90"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Performance Monitoring</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="89"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Client Training &amp; Guidance</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="87"></div></div></div>
+          </div>
+        </div>
+        <div class="array-cat">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-database"/></svg><h3>Database Management</h3></div>
+          <div class="skill-meters">
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">End-User Support</span><span class="skill-level lv-advanced">ADVANCED</span></div><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Software Deployment &amp; Updates</span><span class="skill-level">PROFICIENT</span></div><div class="skill-track"><div class="skill-fill" data-level="82"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">System Access &amp; Permissions</span><span class="skill-level">PROFICIENT</span></div><div class="skill-track"><div class="skill-fill" data-level="83"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">Backup &amp; Optimization</span><span class="skill-level">PROFICIENT</span></div><div class="skill-track"><div class="skill-fill" data-level="80"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span class="skill-name">MySQL &amp; MongoDB</span><span class="skill-level">PROFICIENT</span></div><div class="skill-track"><div class="skill-fill" data-level="78"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="brands" data-index="03">
+    <div class="wrap">
+      <p class="section-kicker">Platforms &amp; Vendors</p>
+      <div class="section-head reveal">
+        <div class="hdr-scan" aria-hidden="true">
+          <svg class="hs-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-monitor"/></svg>
+          <span class="hs-corner tl"></span>
+          <span class="hs-corner tr"></span>
+          <span class="hs-corner bl"></span>
+          <span class="hs-corner br"></span>
+          <span class="hs-line"></span>
+          <span class="hs-check"><svg viewBox="0 0 24 24" fill="none" stroke="#4FBDAF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        </div>
+        <div class="head-text">
+          <span class="hud-tag"><span class="dot" aria-hidden="true"></span>EQUIPMENT LOG · FIELD-TESTED<span class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span></span>
+          <h2>Technology Stack</h2>
+        </div>
+        <span class="idx">3 CATEGORIES</span>
+      </div>
+
+      <div class="array-grid">
+        <div class="array-cat cat-alarm">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-alarm"/></svg><h3>Intruder Alarm Panels</h3></div>
+          <ul class="chips">
+            <li>Satel Integra</li>
+            <li>AVS Xtream</li>
+            <li>Texecom</li>
+            <li>DSC</li>
+            <li>Honeywell Galaxy</li>
+          </ul>
+        </div>
+        <div class="array-cat cat-cctv">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-monitor"/></svg><h3>CCTV, VMS &amp; Recording</h3></div>
+          <ul class="chips">
+            <li>Hikvision</li>
+            <li>Dahua</li>
+            <li>Uniview</li>
+            <li>Bosch</li>
+            <li>Hanwha Techwin</li>
+            <li>Milestone XProtect</li>
+            <li>Genetec Security Center</li>
+          </ul>
+        </div>
+        <div class="array-cat cat-access">
+          <div class="cat-head"><svg class="fic" aria-hidden="true"><use href="#ic-fingerprint"/></svg><h3>Access Control &amp; Biometric</h3></div>
+          <ul class="chips">
+            <li>ZKTeco</li>
+            <li>Hikvision Access</li>
+            <li>Suprema</li>
+            <li>HID</li>
+            <li>Honeywell</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials" data-index="04">
+    <div class="wrap">
+      <p class="section-kicker">Licenses &amp; Compliance</p>
+      <div class="section-head reveal">
+        <div class="hdr-scan" aria-hidden="true">
+          <svg class="hs-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-fingerprint"/></svg>
+          <span class="hs-corner tl"></span>
+          <span class="hs-corner tr"></span>
+          <span class="hs-corner bl"></span>
+          <span class="hs-corner br"></span>
+          <span class="hs-line"></span>
+          <span class="hs-check"><svg viewBox="0 0 24 24" fill="none" stroke="#4FBDAF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        </div>
+        <div class="head-text">
+          <span class="hud-tag"><span class="dot" aria-hidden="true"></span>CLEARANCE VERIFIED · SIRA<span class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span></span>
+          <h2>Licenses &amp; Compliance</h2>
+        </div>
+        <span class="idx">DUBAI, UAE</span>
+      </div>
+
+      <div class="cred-grid">
+        <div class="cred-card">
+          <svg class="cred-icon" aria-hidden="true"><use href="#ic-shield"/></svg>
+          <div>
+            <h3>SIRA Security System Engineer License</h3>
+            <p>DUBAI, UAE</p>
+            <span class="cred-status"><span class="dot" aria-hidden="true"></span>ACTIVE · VERIFIED</span>
+          </div>
+        </div>
+        <div class="cred-card">
+          <svg class="cred-icon" aria-hidden="true"><use href="#ic-alarm"/></svg>
+          <div>
+            <h3>SIRA Intruder Alarm System License</h3>
+            <p>DUBAI, UAE</p>
+            <span class="cred-status"><span class="dot" aria-hidden="true"></span>ACTIVE · VERIFIED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" data-index="05">
+    <div class="wrap">
+      <p class="section-kicker">Education &amp; Profile</p>
+      <div class="section-head reveal">
+        <div class="hdr-scan" aria-hidden="true">
+          <svg class="hs-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-database"/></svg>
+          <span class="hs-corner tl"></span>
+          <span class="hs-corner tr"></span>
+          <span class="hs-corner bl"></span>
+          <span class="hs-corner br"></span>
+          <span class="hs-line"></span>
+          <span class="hs-check"><svg viewBox="0 0 24 24" fill="none" stroke="#4FBDAF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        </div>
+        <div class="head-text">
+          <span class="hud-tag"><span class="dot" aria-hidden="true"></span>ARCHIVE ACCESS · SYSTEM LOG<span class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span></span>
+          <h2>Education &amp; Professional Profile</h2>
+        </div>
+        <span class="idx">03 PANELS</span>
+      </div>
+
+      <div class="tri-grid">
+        <div class="panel-box">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <div class="deg">Bachelor of Information Technology (B.Tech)</div>
+            <div class="inst">Scad College of Engineering and Technology, Tamil Nadu, India</div>
+            <div class="yrs">2009 – 2013</div>
+          </div>
+          <div class="edu-item">
+            <div class="deg">Diploma in Electronics &amp; Communication (DECE)</div>
+            <div class="inst">IRT Polytechnic College, Tamil Nadu, India</div>
+            <div class="yrs">2006 – 2009</div>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <h3>Languages</h3>
+          <div class="lang-row"><span>English</span><span>PROFICIENT</span></div>
+          <div class="lang-row"><span>Tamil</span><span>NATIVE</span></div>
+          <div class="lang-row"><span>Hindi</span><span>CONVERSATIONAL</span></div>
+        </div>
+
+        <div class="panel-box traits">
+          <h3>Profile Notes</h3>
+          <ul>
+            <li><svg class="li-ic" aria-hidden="true"><use href="#ic-users"/></svg>Adaptable problem-solver with a customer-first approach</li>
+            <li><svg class="li-ic" aria-hidden="true"><use href="#ic-target"/></svg>Strong troubleshooting and analytical skills across IT and security systems</li>
+            <li><svg class="li-ic" aria-hidden="true"><use href="#ic-chat"/></svg>Effective collaborator with clear, direct communication</li>
+            <li><svg class="li-ic" aria-hidden="true"><use href="#ic-gauge"/></svg>Prioritizes under pressure to keep multi-site operations running smoothly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="wrap">
+      <p class="section-kicker"><span class="dot" aria-hidden="true"></span>Channel Open</p>
+      <h2>Ready for the next security system challenge?</h2>
+      <p>Open to senior-level CCTV, intruder alarm, access control and biometric systems opportunities across Dubai and the wider UAE.</p>
+      <div class="signal-panel">
+        <div class="contact-grid">
+          <a class="btn primary" href="mailto:vemeeran@gmail.com"><svg class="btn-ic" aria-hidden="true"><use href="#ic-mail"/></svg>vemeeran@gmail.com</a>
+          <a class="btn" href="tel:+971504260038"><svg class="btn-ic" aria-hidden="true"><use href="#ic-phone"/></svg>+971 50 426 0038</a>
+          <a class="btn" href="https://www.linkedin.com/in/vemeeran" target="_blank" rel="noopener"><svg class="btn-ic" aria-hidden="true"><use href="#ic-linkedin"/></svg>linkedin.com/in/vemeeran</a>
+          <span class="btn" style="cursor:default;"><svg class="btn-ic" aria-hidden="true"><use href="#ic-pin"/></svg>Dubai, UAE</span>
+        </div>
+        <p class="signal-panel__status mono">DUBAI, UAE · UTC+4 · RESPONDS PROMPTLY</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="rule"></div>
+    NAGOOR MEERAN · SECURITY SYSTEMS ENGINEER · CCTV · ELV · SIRA · DUBAI, UAE
+    <div style="margin-top:8px; color:var(--muted-dim); opacity:0.7;">Last updated August 2026</div>
+  </footer>
+
+</main>
+
+<button type="button" class="print-fab" id="print-fab" aria-label="Download résumé as PDF" title="Download résumé as PDF">
+  <svg aria-hidden="true"><use href="#ic-download"/></svg>
+</button>
+
+<a href="#main" class="to-top" id="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script>
+  // Build a downloadable vCard so recruiters can save contact info in one tap
+  (function(){
+    const vcard = [
+      'BEGIN:VCARD','VERSION:3.0',
+      'N:Meeran;Nagoor;;;','FN:Nagoor Meeran',
+      'TITLE:Security Systems Engineer',
+      'ORG:Vostok Trading LLC',
+      'TEL;TYPE=CELL:+971504260038',
+      'EMAIL:vemeeran@gmail.com',
+      'URL:https://www.linkedin.com/in/vemeeran',
+      'ADR;TYPE=WORK:;;;Dubai;;;United Arab Emirates',
+      'END:VCARD'
+    ].join('\r\n');
+    const blob = new Blob([vcard], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const btn = document.getElementById('vcard-btn');
+    if (btn) btn.href = url;
+  })();
+
+  // Reveal monitoring-wall feed tiles as they enter view
+  const feeds = document.querySelectorAll('.feed');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    feeds.forEach(f=>io.observe(f));
+
+    // Generic reveal-on-scroll for section headers and grouped cards
+    const revealTargets = document.querySelectorAll('.reveal, .array-cat, .cred-card, .panel-box');
+    revealTargets.forEach(el=>el.classList.add('reveal'));
+    const io2 = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in-view'); io2.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    revealTargets.forEach(el=>io2.observe(el));
+  } else {
+    feeds.forEach(f=>f.classList.add('in-view'));
+    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in-view'));
+  }
+
+  // Scroll progress bar
+  const progressBar = document.getElementById('scroll-progress');
+  function updateProgress(){
+    const h = document.documentElement;
+    const scrolled = h.scrollTop;
+    const max = h.scrollHeight - h.clientHeight;
+    if (progressBar) progressBar.style.width = (max > 0 ? (scrolled / max) * 100 : 0) + '%';
+  }
+  document.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  // Back-to-top button visibility
+  const toTop = document.getElementById('to-top');
+  function updateToTop(){
+    if (toTop) toTop.classList.toggle('visible', window.scrollY > 600);
+  }
+  document.addEventListener('scroll', updateToTop, { passive: true });
+  updateToTop();
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const siteNav = document.getElementById('site-nav');
+  if (navToggle && siteNav){
+    navToggle.addEventListener('click', ()=>{
+      const open = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    siteNav.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click', ()=>{
+        siteNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // Scroll-spy: highlight the nav link for the section in view
+  const navLinks = Array.from(document.querySelectorAll('#site-nav a'));
+  const sections = navLinks
+    .map(a => document.querySelector(a.getAttribute('href')))
+    .filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length){
+    const spy = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        const link = navLinks.find(a => a.getAttribute('href') === '#' + entry.target.id);
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navLinks.forEach(a=>a.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(s=>spy.observe(s));
+  }
+
+  // Count-up animation for the stat readout
+  const counters = document.querySelectorAll('.num[data-count]');
+  function animateCount(el){
+    const target = parseInt(el.getAttribute('data-count'), 10);
+    const suffix = el.getAttribute('data-suffix') || '';
+    if (reduceMotion){ el.textContent = target + suffix; return; }
+    const duration = 1100;
+    const start = performance.now();
+    function tick(now){
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if ('IntersectionObserver' in window && counters.length){
+    const cio = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting){ animateCount(e.target); cio.unobserve(e.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(c=>cio.observe(c));
+  } else {
+    counters.forEach(c=>{ c.textContent = c.getAttribute('data-count') + (c.getAttribute('data-suffix')||''); });
+  }
+
+  // Animate skill diagnostic meters filling in as they enter view
+  const skillFills = document.querySelectorAll('.skill-fill[data-level]');
+  function animateSkillFill(el){
+    const level = el.getAttribute('data-level') + '%';
+    const row = el.closest('.skill-row');
+    if (reduceMotion){
+      el.style.width = level;
+      if (row) row.classList.add('filled');
+      return;
+    }
+    requestAnimationFrame(()=>{ el.style.width = level; });
+    setTimeout(()=>{ if (row) row.classList.add('filled'); }, 1150);
+  }
+  if ('IntersectionObserver' in window && skillFills.length){
+    const skio = new IntersectionObserver((entries)=>{
+      entries.forEach((entry, i)=>{
+        if (entry.isIntersecting){
+          const el = entry.target;
+          const delay = reduceMotion ? 0 : i * 45;
+          setTimeout(()=>animateSkillFill(el), delay);
+          skio.unobserve(el);
+        }
+      });
+    }, { threshold: 0.4 });
+    skillFills.forEach(f=>skio.observe(f));
+  } else {
+    skillFills.forEach(animateSkillFill);
+  }
+
+  // Force all scroll-triggered content (reveals, skill meters, counters)
+  // into their final visible state before printing/exporting to PDF, so
+  // nothing shows up blank just because the page was never scrolled.
+  function prepareForPrint(){
+    document.querySelectorAll('.reveal, .feed, .array-cat, .cred-card, .panel-box')
+      .forEach(el=>el.classList.add('in-view'));
+    document.querySelectorAll('.skill-fill[data-level]').forEach(el=>{
+      el.style.width = el.getAttribute('data-level') + '%';
+      const row = el.closest('.skill-row');
+      if (row) row.classList.add('filled');
+    });
+    document.querySelectorAll('.num[data-count]').forEach(el=>{
+      const target = el.getAttribute('data-count');
+      const suffix = el.getAttribute('data-suffix') || '';
+      el.textContent = target + suffix;
+    });
+  }
+  window.addEventListener('beforeprint', prepareForPrint);
+  ['print-photo-btn','print-fab'].forEach(id=>{
+    const btn = document.getElementById(id);
+    if (btn){
+      btn.addEventListener('click', ()=>{
+        prepareForPrint();
+        setTimeout(()=>window.print(), 30);
+      });
+    }
+  });
+
+  // Cursor-tracking spotlight glow on monitoring-wall feed cards
+  if (!reduceMotion && window.matchMedia('(hover: hover)').matches){
+    feeds.forEach(card=>{
+      card.addEventListener('mousemove', (e)=>{
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
